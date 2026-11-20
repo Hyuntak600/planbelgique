@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<title>호주 스폰서 비자 가이드 (482) · Guide du visa sponsorisé Australie (482)</title>
+<title>Guide visa 482 Australie</title>
 <style>
 
 
@@ -26,8 +26,14 @@ body[data-lang=fr] .fr{color:var(--tx);font-size:1em;font-weight:500}
 header{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:10px;height:56px;padding:0 16px;background:var(--hd);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--ln)}
 .hl{display:flex;align-items:center;min-width:0}.hr{display:flex;align-items:center;gap:8px}
 .logo{width:20px;height:20px;border-radius:6px;background:var(--tx);position:relative}.logo:after{content:"";position:absolute;left:5px;bottom:5px;width:10px;height:3px;border-radius:2px;background:var(--ac)}
-#back{display:none;align-items:center;gap:6px;height:34px;padding:0 10px 0 8px;border-radius:10px;border:1px solid var(--ln);background:var(--sf);font-size:13.5px}
-#back.on{display:inline-flex}#back .ko,#back .fr{display:inline}#back .fr{margin:0 0 0 4px}
+#back,#back2{display:none;align-items:center;gap:6px;height:34px;padding:0 10px 0 8px;border-radius:10px;border:1px solid var(--ln);background:var(--sf);font-size:13.5px}
+#back.on,#back2{display:inline-flex}#back .ko,#back .fr,#back2 .ko,#back2 .fr{display:inline}#back .fr,#back2 .fr{margin:0 0 0 4px}
+body[data-lang=ko] #back2 .fr,body[data-lang=fr] #back2 .ko{display:none}
+.bkbar{position:sticky;top:56px;z-index:8;margin:0 -16px 10px;padding:8px 16px;background:var(--hd);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px)}
+#back2{height:36px;padding:0 14px 0 10px;border:1px solid var(--ln);background:var(--sf);font-size:14px}
+#back2:hover{border-color:var(--ac)}
+@media (max-width:699px){.bkbar{display:none}}
+@media (min-width:700px){#back{display:none!important}#logo{display:flex!important}}
 .seg{display:flex;padding:3px;border-radius:999px;background:var(--mut);border:1px solid var(--ln)}
 .seg button{height:28px;padding:0 11px;border-radius:999px;font:500 12px "JetBrains Mono",monospace;color:var(--sub);transition:all .2s}
 .seg button[aria-pressed=true]{background:var(--sf);color:var(--tx);box-shadow:0 1px 2px rgba(16,24,40,.08)}
@@ -167,7 +173,6 @@ header{position:sticky}
 /* ===== scan-friendly reading ===== */
 .ck input{-webkit-appearance:none;appearance:none;width:24px;height:24px;margin-top:1px;border:1.5px solid var(--tx);background:var(--sf);transition:all .45s var(--ease)}
 .lead.crit{background:var(--acs)}
-#secpill{border-radius:0}
 :root{--r:0}
 .card,.mc,.dd,.gauge,.mcat,.sheet{border-radius:var(--r)!important}
 .card p,.rw,.sd{max-width:65ch;line-height:1.65}
@@ -191,10 +196,6 @@ header{position:sticky}
 .tk{position:absolute;inset:4px;width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
 .tk path{stroke-dasharray:1;stroke-dashoffset:1}
 .ck input:checked+.tk path{stroke-dashoffset:0}
-#secpill{position:fixed;left:50%;top:calc(66px + env(safe-area-inset-top,0px));z-index:9;transform:translate(-50%,-8px);display:flex;gap:10px;align-items:center;max-width:80%;padding:6px 14px;border-radius:999px;background:var(--tx);color:var(--bg);font-size:12.5px;opacity:0;pointer-events:none;transition:all .45s var(--ease);white-space:nowrap}
-#secpill.on{opacity:.94;transform:translate(-50%,0)}
-#secpill b{font-weight:500;overflow:hidden;text-overflow:ellipsis}
-#secpill .mn{color:#F3B79F}
 @media (prefers-reduced-motion:reduce){.more[open]>p{animation:none}}
 
 .hero .dd{position:absolute;top:12px;right:12px;z-index:2;display:flex;flex-direction:column;align-items:flex-end;width:auto;margin:0;padding:5px 9px;gap:0;background:transparent;border:1px solid rgba(255,255,255,.28)}
@@ -231,8 +232,8 @@ body[data-lang=both] .card .lead .fr,body[data-lang=fr] .card .lead .fr{font-wei
 body[data-lang=both] .card .lead .ko{font-weight:400}
 body[data-lang=both] .rw b .fr,body[data-lang=fr] .rw b .fr{font-weight:600;color:var(--tx)}
 body[data-lang=both] .rw b .ko{font-weight:400;color:var(--sub)}
-body[data-lang=both] :is(#back,.menu button,.sub button,.nav,.sheet h3,.sb,.cb,.chip,.more summary) .fr{margin:0 6px 0 0}
-body[data-lang=both] :is(#back,.menu button,.sub button,.nav,.sheet h3,.sb,.cb,.chip,.more summary) .ko{margin:0;font-size:.85em}
+body[data-lang=both] :is(#back,#back2,.menu button,.sub button,.nav,.sheet h3,.sb,.cb,.chip,.more summary) .fr{margin:0 6px 0 0}
+body[data-lang=both] :is(#back,#back2,.menu button,.sub button,.nav,.sheet h3,.sb,.cb,.chip,.more summary) .ko{margin:0;font-size:.85em}
 body[data-lang=both] .sub button[aria-pressed=true] .fr,body[data-lang=both] .sub button[aria-pressed=true] .ko{color:inherit}
 body[data-lang=both] .cb .fr,body[data-lang=both] .cb .ko,body[data-lang=both] .sb.p .fr,body[data-lang=both] .sb.p .ko{color:inherit}
 
@@ -242,6 +243,34 @@ body[data-lang=ko] .fr{display:none!important}
 .lnk .fr{margin:0}
 
 .more .st,.more .tl3,.more .acc{margin-top:10px}.more>.rw:first-of-type{margin-top:10px}.more>.rw{max-width:none}
+
+/* PC: 카드를 1열로 크게 — 한 카드가 화면에 한눈에 들어오게 */
+@media (min-width:1000px){
+  main,main.wide{max-width:1040px;padding:24px 32px 72px}
+  main.home{max-width:760px}
+  .list{gap:22px}
+  .bkbar{margin:0 -32px 12px;padding:8px 32px}
+  .eyebrow{font-size:13px;margin-bottom:12px}
+  .sub button{padding:10px 16px;font-size:15px}.sd{font-size:16px}
+  .card{padding:38px 48px;gap:18px}
+  .card h2{font-size:32px}
+  .hn{font-size:13px}
+  .card p,.rw,.sd{max-width:none}
+  .card p{font-size:18px}
+  .card .lead{font-size:22px;line-height:1.55}
+  .more>p{font-size:18px}
+  .more summary{font-size:15px;padding:12px 0}
+  .rw{font-size:17px;padding-top:14px;padding-left:18px}
+  .ck,.ts{font-size:17px}
+  .mcat .ck{font-size:15.5px}
+  .st b{font-size:24px}.st span{font-size:15px}
+  .chip{font-size:15px;padding:8px 14px 8px 11px}
+  .cb,.lnk{height:42px;padding:0 18px;font-size:15px}
+  pre{font-size:15px;padding:18px}
+  .fq>button{font-size:19px;padding:20px 0}.fq .a>div{font-size:17px;padding-bottom:20px}
+  .lead.crit{padding:16px 20px}
+}
+@media (min-width:1500px){main,main.wide{max-width:1120px}}
 </style>
 </head>
 <body data-lang="fr">
@@ -365,19 +394,19 @@ const D2=[
 {tags:P1,t:["원리 ② 유창성과 발음이 먼저","Principe ② Fluidité et prononciation d'abord"],d:["어려운 단어나 완벽한 문법이 없어도, 일정한 속도로 또박또박 끊김 없이 말하면 AI가 높게 채점해요.","Sans mots difficiles ni grammaire parfaite, parler à vitesse régulière, distinctement et sans coupure donne un bon score IA."]},
 {tags:P1,t:["원리 ③ 점수 공유 (Cross-scoring)","Principe ③ Scores partagés (cross-scoring)"],d:["말하기 일부 문제가 읽기·듣기 점수에도 반영돼요. 그래서 말하기 연습이 전체 점수를 같이 올려요.","Certaines tâches orales comptent aussi pour la lecture et l'écoute : s'entraîner à l'oral fait monter tout le score."]},
 {tags:P2,t:["1. Speaking 말하기","1. Speaking (oral)"],d:["가장 중요해요. 다른 영역 점수까지 끌어올려요.","La compétence la plus importante : elle tire aussi les autres scores."],rows:[
- [["① Read Aloud (지문 읽기)","① Read Aloud (lecture à voix haute)"],["모르는 단어도 비슷하게 발음하며 멈추지 말고 읽어요.","Mot inconnu ? Prononcez-le approximativement et continuez sans vous arrêter."]],
- [["② Repeat Sentence (문장 따라 말하기)","② Repeat Sentence (répéter la phrase)"],["다 못 외워도 기억나는 핵심 단어 50% 이상을 유창하게 말해요.","Même sans tout retenir, dites couramment au moins 50 % des mots clés retenus."]],
- [["③ Describe Image (그림 묘사)","③ Describe Image (décrire une image)"],["분석하지 말고 만능 틀에 제목과 숫자만 끼워 말해요.","N'analysez pas : insérez titre et chiffres dans un modèle appris."]],
- [["④ Retell Lecture / Answer Short Question","④ Retell Lecture / Answer Short Question"],["들린 단어 3~4개를 만능 틀에 끼워 말해요.","Insérez 3-4 mots entendus dans un modèle."]]],tpl:TPL1,tplT:["초간단 실전 템플릿 보기 (Describe Image)","Voir le modèle express (Describe Image)"]},
+ [["① RA · Read Aloud (지문 읽기)","① RA · Read Aloud (lecture à voix haute)"],["모르는 단어도 비슷하게 발음하며 멈추지 말고 읽어요.","Mot inconnu ? Prononcez-le approximativement et continuez sans vous arrêter."]],
+ [["② RS · Repeat Sentence (문장 따라 말하기)","② RS · Repeat Sentence (répéter la phrase)"],["다 못 외워도 기억나는 핵심 단어 50% 이상을 유창하게 말해요.","Même sans tout retenir, dites couramment au moins 50 % des mots clés retenus."]],
+ [["③ DI · Describe Image (그림 묘사)","③ DI · Describe Image (décrire une image)"],["분석하지 말고 만능 틀에 제목과 숫자만 끼워 말해요.","N'analysez pas : insérez titre et chiffres dans un modèle appris."]],
+ [["④ RL / ASQ · Retell Lecture / Answer Short Question","④ RL / ASQ · Retell Lecture / Answer Short Question"],["들린 단어 3~4개를 만능 틀에 끼워 말해요.","Insérez 3-4 mots entendus dans un modèle."]]],tpl:TPL1,tplT:["초간단 실전 템플릿 보기 (Describe Image)","Voir le modèle express (Describe Image)"]},
 {tags:P2,t:["2. Writing 쓰기","2. Writing (écriture)"],d:["만능 틀과 받아쓰기로 해결해요.","Un modèle de base et la dictée font l'essentiel."],rows:[
- [["① Summarize Written Text (한 문장 요약)","① Summarize Written Text (résumé en une phrase)"],["중요한 두 문장을 가져와 , and 또는 , which로 이어 한 문장(5~75단어)으로 써요.","Prenez 2 phrases clés et reliez-les par « , and » ou « , which » : une phrase de 5 à 75 mots."]],
- [["② Write Essay (에세이)","② Write Essay (dissertation)"],["20분, 200~300단어. 외운 틀의 빈칸에 문제 키워드만 채워요.","20 min, 200-300 mots. Remplissez les blancs du modèle avec les mots clés du sujet."]]],tpl:TPL2,tplT:["초간단 실전 템플릿 보기 (Essay)","Voir le modèle express (Essay)"]},
+ [["① SWT · Summarize Written Text (한 문장 요약)","① SWT · Summarize Written Text (résumé en une phrase)"],["중요한 두 문장을 가져와 , and 또는 , which로 이어 한 문장(5~75단어)으로 써요.","Prenez 2 phrases clés et reliez-les par « , and » ou « , which » : une phrase de 5 à 75 mots."]],
+ [["② WE · Write Essay (에세이)","② WE · Write Essay (dissertation)"],["20분, 200~300단어. 외운 틀의 빈칸에 문제 키워드만 채워요.","20 min, 200-300 mots. Remplissez les blancs du modèle avec les mots clés du sujet."]]],tpl:TPL2,tplT:["초간단 실전 템플릿 보기 (Essay)","Voir le modèle express (Essay)"]},
 {tags:P2,t:["3. Reading 읽기","3. Reading (lecture)"],d:["시간 배분과 기초 어휘가 핵심이에요.","Gestion du temps et vocabulaire de base."],rows:[
- [["① Fill in the Blanks (빈칸 채우기)","① Fill in the Blanks (texte à trous)"],["문법을 다 따지지 말고 앞뒤 단어와의 자연스러운 짝(collocation)으로 빠르게 골라요.","N'analysez pas toute la grammaire : choisissez vite d'après les associations naturelles (collocations)."]],
- [["② Multiple Choice / Re-order Paragraphs","② Multiple Choice / Re-order Paragraphs"],["객관식은 30초 안에 고르고 넘어가서 빈칸 문제에 시간을 써요.","Répondez aux QCM en 30 s max et gardez le temps pour les textes à trous."]]]},
+ [["① RW-FIB / R-FIB · Fill in the Blanks (빈칸 채우기)","① RW-FIB / R-FIB · Fill in the Blanks (texte à trous)"],["문법을 다 따지지 말고 앞뒤 단어와의 자연스러운 짝(collocation)으로 빠르게 골라요.","N'analysez pas toute la grammaire : choisissez vite d'après les associations naturelles (collocations)."]],
+ [["② MCSA / MCMA / RO · Multiple Choice / Re-order Paragraphs","② MCSA / MCMA / RO · Multiple Choice / Re-order Paragraphs"],["객관식은 30초 안에 고르고 넘어가서 빈칸 문제에 시간을 써요.","Répondez aux QCM en 30 s max et gardez le temps pour les textes à trous."]]]},
 {tags:P2,t:["4. Listening 듣기","4. Listening (écoute)"],d:["마지막 결정타는 받아쓰기예요.","Le coup de grâce : la dictée."],rows:[
- [["① Write From Dictation (받아쓰기)","① Write From Dictation (dictée)"],["APEUni 빈출 문장 100선을 외우고, 철자가 헷갈리면 아는 대로 최대한 적어요.","Apprenez les 100 phrases fréquentes d'APEUni ; en cas de doute sur l'orthographe, écrivez le plus possible."]],
- [["② Summarize Spoken Text / Fill in the Blanks","② Summarize Spoken Text / Fill in the Blanks"],["들리는 핵심 명사 4~5개를 메모해 요약 틀에 끼워 넣어요.","Notez 4-5 noms clés entendus et insérez-les dans le modèle de résumé."]]]},
+ [["① WFD · Write From Dictation (받아쓰기)","① WFD · Write From Dictation (dictée)"],["APEUni 빈출 문장 100선을 외우고, 철자가 헷갈리면 아는 대로 최대한 적어요.","Apprenez les 100 phrases fréquentes d'APEUni ; en cas de doute sur l'orthographe, écrivez le plus possible."]],
+ [["② SST / L-FIB · Summarize Spoken Text / Fill in the Blanks","② SST / L-FIB · Summarize Spoken Text / Fill in the Blanks"],["들리는 핵심 명사 4~5개를 메모해 요약 틀에 끼워 넣어요.","Notez 4-5 noms clés entendus et insérez-les dans le modèle de résumé."]]]},
 {t:["템플릿은 뼈대로만","Le modèle n'est qu'un squelette"],d:["Pearson은 통째로 외운 답안의 점수를 낮출 수 있다고 해요. 틀의 [ ]에 직접 내용을 채우고, 문장도 조금씩 바꿔 연습하세요.","Pearson peut pénaliser les réponses entièrement mémorisées. Remplissez vous-même les [ ] et variez un peu les phrases à l'entraînement."]},
 {t:["준비물","À préparer"],d:["유효한 벨기에 여권, Pearson 계정·예약 확인증, 연습 앱 APEUni(비공식 AI 채점)예요.","Passeport belge valide, compte Pearson + confirmation de réservation, appli APEUni (notation IA non officielle)."]},
 {t:["APEUni 사이트 (연습)","APEUni (entraînement)"],d:["PTE 연습용 사이트·앱이에요. AI 채점으로 말하기·쓰기를 미리 점수 확인하고, 빈출 문제와 모의고사를 풀 수 있어요. 공식 사이트가 아니라서 점수는 참고용이에요. 가입 후 무료 모의고사 1회부터 해 보세요.","Site et appli d'entraînement au PTE : notation IA de l'oral et de l'écrit, questions fréquentes et tests blancs. Non officiel : les scores sont indicatifs. Après inscription, commencez par le test blanc gratuit."],links:[["https://www.apeuni.com","apeuni.com"]]},
@@ -429,23 +458,23 @@ let view=null,idx=0,cur=null;
 const REQ={t:["필요한 점수","Score requis"],d:["482 비자의 영어 기준은 PTE 모든 영역 각 36점 이상이에요. 한 영역이라도 모자라면 안 돼요. 영주권(186) 쪽은 더 높은 점수(보통 PTE 50 / IELTS 6.0)를 요구할 수 있으니 접수 전에 확인하세요.","Pour le 482 : 36 minimum dans chaque compétence du PTE, aucune ne peut manquer. Pour le visa 186, un score plus élevé (souvent PTE 50 / IELTS 6,0) peut être exigé : vérifiez avant de déposer."],stats:[[["각 36점+","36+ chacun"],["PTE 4개 영역 모두","Les 4 compétences PTE"]],[["IELTS 5.0","IELTS 5,0"],["대신 낼 수 있어요","Alternative possible"]],[["면제","Dispense"],["면제국 여권이면 시험 불필요","Aucun test pour un passeport dispensé"]]],k:'eng5'};
 const SUBJ=[
 {h:["Speaking 말하기","Speaking (oral)"],d:["가장 중요해요. 다른 영역 점수까지 끌어올려요.","La plus importante : elle tire aussi les autres scores."],tasks:[
-{t:["Read Aloud (지문 읽기)","Read Aloud (lecture à voix haute)"],d:["화면의 글을 소리 내어 읽어요.","Lisez le texte affiché à voix haute."],rows:[[["멈추지 않기","Ne pas s'arrêter"],["모르는 단어도 비슷하게 발음하고 계속 가요.","Mot inconnu : prononcez-le approximativement et continuez."]],[["쉼표·마침표에서만 쉬기","Pauses aux virgules et points"],["일정한 속도로 리듬 있게 읽어요.","Lisez à vitesse régulière, avec rythme."]]]},
-{t:["Repeat Sentence (문장 따라 말하기)","Repeat Sentence (répéter la phrase)"],d:["들은 문장을 그대로 따라 말해요.","Répétez la phrase entendue."],rows:[[["핵심 단어 우선","Mots clés d'abord"],["다 못 외워도 기억나는 단어 50% 이상을 유창하게 말해요.","Même sans tout retenir, dites couramment au moins 50 % des mots."]],[["순서 지키기","Garder l'ordre"],["들은 순서대로, 끝까지 멈추지 말고 말해요.","Dans l'ordre entendu, sans s'arrêter."]]]},
-{t:["Describe Image (그림 묘사)","Describe Image (décrire une image)"],d:["그래프·표·사진을 보고 약 25초 동안 말해요.","Décrivez un graphique, tableau ou image pendant environ 25 s."],rows:[[["제목과 숫자 두 개","Titre et deux chiffres"],["가장 큰 값과 가장 작은 값만 찾아요.","Repérez seulement la valeur la plus haute et la plus basse."]],[["만능 틀 사용","Utiliser un modèle"],["분석하지 말고 틀에 끼워 말해요.","N'analysez pas : insérez dans le modèle."]]],tpl:TPL1,tplT:["초간단 실전 템플릿 보기 (Describe Image)","Voir le modèle express (Describe Image)"]},
-{t:["Retell Lecture (강의 요약 말하기)","Retell Lecture (résumer la conférence)"],d:["짧은 강의를 듣고 내용을 다시 말해요.","Écoutez un court exposé puis redites-le."],rows:[[["키워드 3~4개 메모","Noter 3-4 mots clés"],["들리는 명사를 적어 틀에 끼워요.","Notez les noms entendus et insérez-les dans un modèle."]],[["끊기면 이어 말하기","Enchaîner sans pause"],["3초 규칙을 기억하고 계속 말해요.","Règle des 3 s : continuez à parler."]]]},
-{t:["Answer Short Question (짧은 질문 답하기)","Answer Short Question (question courte)"],d:["짧은 질문에 한두 단어로 답해요.","Répondez en un ou deux mots."],rows:[[["바로 한 단어","Un mot, tout de suite"],["길게 설명하지 말고 즉시 답해요.","Pas d'explication : répondez aussitôt."]],[["모르면 아는 단어로","Si inconnu, un mot connu"],["침묵보다 틀린 답이 나아요.","Mieux vaut une erreur que le silence."]]]}]},
+{t:["RA · Read Aloud (지문 읽기)","RA · Read Aloud (lecture à voix haute)"],d:["화면의 글을 소리 내어 읽어요.","Lisez le texte affiché à voix haute."],rows:[[["멈추지 않기","Ne pas s'arrêter"],["모르는 단어도 비슷하게 발음하고 계속 가요.","Mot inconnu : prononcez-le approximativement et continuez."]],[["쉼표·마침표에서만 쉬기","Pauses aux virgules et points"],["일정한 속도로 리듬 있게 읽어요.","Lisez à vitesse régulière, avec rythme."]]]},
+{t:["RS · Repeat Sentence (문장 따라 말하기)","RS · Repeat Sentence (répéter la phrase)"],d:["들은 문장을 그대로 따라 말해요.","Répétez la phrase entendue."],rows:[[["핵심 단어 우선","Mots clés d'abord"],["다 못 외워도 기억나는 단어 50% 이상을 유창하게 말해요.","Même sans tout retenir, dites couramment au moins 50 % des mots."]],[["순서 지키기","Garder l'ordre"],["들은 순서대로, 끝까지 멈추지 말고 말해요.","Dans l'ordre entendu, sans s'arrêter."]]]},
+{t:["DI · Describe Image (그림 묘사)","DI · Describe Image (décrire une image)"],d:["그래프·표·사진을 보고 약 25초 동안 말해요.","Décrivez un graphique, tableau ou image pendant environ 25 s."],rows:[[["제목과 숫자 두 개","Titre et deux chiffres"],["가장 큰 값과 가장 작은 값만 찾아요.","Repérez seulement la valeur la plus haute et la plus basse."]],[["만능 틀 사용","Utiliser un modèle"],["분석하지 말고 틀에 끼워 말해요.","N'analysez pas : insérez dans le modèle."]]],tpl:TPL1,tplT:["초간단 실전 템플릿 보기 (Describe Image)","Voir le modèle express (Describe Image)"]},
+{t:["RL · Retell Lecture (강의 요약 말하기)","RL · Retell Lecture (résumer la conférence)"],d:["짧은 강의를 듣고 내용을 다시 말해요.","Écoutez un court exposé puis redites-le."],rows:[[["키워드 3~4개 메모","Noter 3-4 mots clés"],["들리는 명사를 적어 틀에 끼워요.","Notez les noms entendus et insérez-les dans un modèle."]],[["끊기면 이어 말하기","Enchaîner sans pause"],["3초 규칙을 기억하고 계속 말해요.","Règle des 3 s : continuez à parler."]]]},
+{t:["ASQ · Answer Short Question (짧은 질문 답하기)","ASQ · Answer Short Question (question courte)"],d:["짧은 질문에 한두 단어로 답해요.","Répondez en un ou deux mots."],rows:[[["바로 한 단어","Un mot, tout de suite"],["길게 설명하지 말고 즉시 답해요.","Pas d'explication : répondez aussitôt."]],[["모르면 아는 단어로","Si inconnu, un mot connu"],["침묵보다 틀린 답이 나아요.","Mieux vaut une erreur que le silence."]]]}]},
 {h:["Writing 쓰기","Writing (écriture)"],d:["만능 틀과 받아쓰기로 해결해요.","Un modèle de base et la dictée font l'essentiel."],tasks:[
-{t:["Summarize Written Text (한 문장 요약)","Summarize Written Text (résumé en une phrase)"],d:["지문을 읽고 한 문장(5~75단어)으로 요약해요.","Résumez le texte en une seule phrase (5 à 75 mots)."],rows:[[["중요한 두 문장","Deux phrases clés"],["핵심 문장 두 개를 골라요.","Choisissez les deux phrases essentielles."]],[["연결어로 한 문장","Un seul lien"],[", and 또는 , which로 이어요. 마침표는 끝에 한 번만 써요.","Reliez par « , and » ou « , which ». Un seul point, à la fin."]]]},
-{t:["Write Essay (에세이)","Write Essay (dissertation)"],d:["20분 동안 200~300단어로 써요.","20 min, 200 à 300 mots."],rows:[[["외운 틀의 빈칸","Blancs du modèle"],["문제 키워드만 채워 넣어요.","Remplissez seulement avec les mots clés du sujet."]],[["마지막 2분 점검","2 dernières minutes"],["단어 수와 철자를 확인해요.","Vérifiez le nombre de mots et l'orthographe."]]],tpl:TPL2,tplT:["초간단 실전 템플릿 보기 (Essay)","Voir le modèle express (Essay)"]}]},
+{t:["SWT · Summarize Written Text (한 문장 요약)","SWT · Summarize Written Text (résumé en une phrase)"],d:["지문을 읽고 한 문장(5~75단어)으로 요약해요.","Résumez le texte en une seule phrase (5 à 75 mots)."],rows:[[["중요한 두 문장","Deux phrases clés"],["핵심 문장 두 개를 골라요.","Choisissez les deux phrases essentielles."]],[["연결어로 한 문장","Un seul lien"],[", and 또는 , which로 이어요. 마침표는 끝에 한 번만 써요.","Reliez par « , and » ou « , which ». Un seul point, à la fin."]]]},
+{t:["WE · Write Essay (에세이)","WE · Write Essay (dissertation)"],d:["20분 동안 200~300단어로 써요.","20 min, 200 à 300 mots."],rows:[[["외운 틀의 빈칸","Blancs du modèle"],["문제 키워드만 채워 넣어요.","Remplissez seulement avec les mots clés du sujet."]],[["마지막 2분 점검","2 dernières minutes"],["단어 수와 철자를 확인해요.","Vérifiez le nombre de mots et l'orthographe."]]],tpl:TPL2,tplT:["초간단 실전 템플릿 보기 (Essay)","Voir le modèle express (Essay)"]}]},
 {h:["Reading 읽기","Reading (lecture)"],d:["시간 배분과 기초 어휘가 핵심이에요.","Gestion du temps et vocabulaire de base."],tasks:[
-{t:["Fill in the Blanks (빈칸 채우기)","Fill in the Blanks (texte à trous)"],d:["글의 빈칸에 알맞은 단어를 골라요.","Choisissez le mot qui convient à chaque blanc."],rows:[[["짝(collocation)","Collocations"],["문법을 다 따지지 말고 앞뒤 단어와 자연스러운 짝으로 골라요.","Ne faites pas toute la grammaire : choisissez selon les associations naturelles."]],[["쉬운 빈칸부터","Les faciles d'abord"],["확실한 것부터 채우고 어려운 건 나중에 해요.","Remplissez d'abord les sûrs."]]]},
-{t:["Multiple Choice (객관식)","Multiple Choice (QCM)"],d:["글을 읽고 질문에 답을 골라요.","Lisez puis répondez à la question."],rows:[[["30초 안에 결정","Décider en 30 s"],["못 정하면 넘어가고 빈칸 문제에 시간을 써요.","Si indécis, passez et gardez le temps pour les trous."]],[["소거법","Élimination"],["틀린 선택지를 먼저 지워요.","Éliminez d'abord les mauvaises options."]]]},
-{t:["Re-order Paragraphs (문단 순서 맞추기)","Re-order Paragraphs (ordre des paragraphes)"],d:["섞인 문단을 올바른 순서로 놓아요.","Remettez les paragraphes dans l'ordre."],rows:[[["첫 문단 찾기","Trouver le premier"],["대명사 없이 주제를 소개하는 문단이 처음이에요.","Le premier présente le sujet sans pronom de renvoi."]],[["연결어 따라가기","Suivre les liens"],["this, it, however 같은 단어가 앞 문단을 가리켜요.","Des mots comme this, it, however renvoient au paragraphe précédent."]]]}]},
+{t:["RW-FIB / R-FIB · Fill in the Blanks (빈칸 채우기)","RW-FIB / R-FIB · Fill in the Blanks (texte à trous)"],d:["글의 빈칸에 알맞은 단어를 골라요.","Choisissez le mot qui convient à chaque blanc."],rows:[[["짝(collocation)","Collocations"],["문법을 다 따지지 말고 앞뒤 단어와 자연스러운 짝으로 골라요.","Ne faites pas toute la grammaire : choisissez selon les associations naturelles."]],[["쉬운 빈칸부터","Les faciles d'abord"],["확실한 것부터 채우고 어려운 건 나중에 해요.","Remplissez d'abord les sûrs."]]]},
+{t:["MCSA / MCMA · Multiple Choice (객관식)","MCSA / MCMA · Multiple Choice (QCM)"],d:["글을 읽고 질문에 답을 골라요.","Lisez puis répondez à la question."],rows:[[["30초 안에 결정","Décider en 30 s"],["못 정하면 넘어가고 빈칸 문제에 시간을 써요.","Si indécis, passez et gardez le temps pour les trous."]],[["소거법","Élimination"],["틀린 선택지를 먼저 지워요.","Éliminez d'abord les mauvaises options."]]]},
+{t:["RO · Re-order Paragraphs (문단 순서 맞추기)","RO · Re-order Paragraphs (ordre des paragraphes)"],d:["섞인 문단을 올바른 순서로 놓아요.","Remettez les paragraphes dans l'ordre."],rows:[[["첫 문단 찾기","Trouver le premier"],["대명사 없이 주제를 소개하는 문단이 처음이에요.","Le premier présente le sujet sans pronom de renvoi."]],[["연결어 따라가기","Suivre les liens"],["this, it, however 같은 단어가 앞 문단을 가리켜요.","Des mots comme this, it, however renvoient au paragraphe précédent."]]]}]},
 {h:["Listening 듣기","Listening (écoute)"],d:["마지막 결정타는 받아쓰기예요.","Le coup de grâce : la dictée."],tasks:[
-{t:["Write From Dictation (받아쓰기)","Write From Dictation (dictée)"],d:["들은 문장을 그대로 타이핑해요.","Tapez la phrase entendue."],rows:[[["빈출 문장 암기","Phrases fréquentes"],["APEUni 빈출 문장 100선을 외워요.","Apprenez les 100 phrases fréquentes d'APEUni."]],[["아는 대로 전부","Tout ce que vous avez"],["철자가 헷갈려도 들은 단어를 최대한 적어요.","Même hésitant sur l'orthographe, écrivez le plus possible."]]]},
-{t:["Summarize Spoken Text (듣고 요약)","Summarize Spoken Text (résumé oral)"],d:["강의를 듣고 50~70단어로 요약해요.","Résumez l'exposé en 50 à 70 mots."],rows:[[["핵심 명사 4~5개","4-5 noms clés"],["듣는 동안 메모해요.","Notez-les pendant l'écoute."]],[["요약 틀","Modèle de résumé"],["메모한 단어를 틀에 끼워 써요.","Insérez vos notes dans le modèle."]]]},
-{t:["Fill in the Blanks (듣고 빈칸 채우기)","Fill in the Blanks (écoute à trous)"],d:["들으면서 빈칸에 단어를 타이핑해요.","Tapez les mots manquants en écoutant."],rows:[[["들으면서 바로","Taper en écoutant"],["나중에 쓰려 하지 말고 들리는 즉시 입력해요.","Ne remettez pas à plus tard : tapez aussitôt."]],[["철자 확인","Vérifier l'orthographe"],["철자가 틀리면 점수를 못 받아요.","Une faute d'orthographe annule le point."]]]},
-{t:["Multiple Choice (듣고 객관식)","Multiple Choice (QCM à l'écoute)"],d:["듣고 알맞은 답을 골라요.","Écoutez puis choisissez."],rows:[[["선택지 먼저 읽기","Lire les options d'abord"],["듣기 전에 선택지를 훑어 키워드를 잡아요.","Parcourez les options avant l'écoute."]],[["소거법","Élimination"],["확실히 틀린 것부터 지워요.","Éliminez d'abord les mauvaises."]]]}]}
+{t:["WFD · Write From Dictation (받아쓰기)","WFD · Write From Dictation (dictée)"],d:["들은 문장을 그대로 타이핑해요.","Tapez la phrase entendue."],rows:[[["빈출 문장 암기","Phrases fréquentes"],["APEUni 빈출 문장 100선을 외워요.","Apprenez les 100 phrases fréquentes d'APEUni."]],[["아는 대로 전부","Tout ce que vous avez"],["철자가 헷갈려도 들은 단어를 최대한 적어요.","Même hésitant sur l'orthographe, écrivez le plus possible."]]]},
+{t:["SST · Summarize Spoken Text (듣고 요약)","SST · Summarize Spoken Text (résumé oral)"],d:["강의를 듣고 50~70단어로 요약해요.","Résumez l'exposé en 50 à 70 mots."],rows:[[["핵심 명사 4~5개","4-5 noms clés"],["듣는 동안 메모해요.","Notez-les pendant l'écoute."]],[["요약 틀","Modèle de résumé"],["메모한 단어를 틀에 끼워 써요.","Insérez vos notes dans le modèle."]]]},
+{t:["L-FIB · Fill in the Blanks (듣고 빈칸 채우기)","L-FIB · Fill in the Blanks (écoute à trous)"],d:["들으면서 빈칸에 단어를 타이핑해요.","Tapez les mots manquants en écoutant."],rows:[[["들으면서 바로","Taper en écoutant"],["나중에 쓰려 하지 말고 들리는 즉시 입력해요.","Ne remettez pas à plus tard : tapez aussitôt."]],[["철자 확인","Vérifier l'orthographe"],["철자가 틀리면 점수를 못 받아요.","Une faute d'orthographe annule le point."]]]},
+{t:["MCSA / MCMA · Multiple Choice (듣고 객관식)","MCSA / MCMA · Multiple Choice (QCM à l'écoute)"],d:["듣고 알맞은 답을 골라요.","Écoutez puis choisissez."],rows:[[["선택지 먼저 읽기","Lire les options d'abord"],["듣기 전에 선택지를 훑어 키워드를 잡아요.","Parcourez les options avant l'écoute."]],[["소거법","Élimination"],["확실히 틀린 것부터 지워요.","Éliminez d'abord les mauvaises."]]]}]}
 ];
 const SUBT=[[["1 시험 소개·필요 점수","1 Le test et le score"]],[["2 과목별 스킬","2 Compétences et astuces"]],[["3 준비·예약","3 Préparation et réservation"]]];
 let sub=0,subj=0,lastView=null;
@@ -477,11 +506,11 @@ function chunk(d,hx){
   let n=1;if(k.length<=2&&tot<150)n=k.length;else if(k.length>1&&k[0].length<28&&k[0].length+k[1].length<=90)n=2;
   const lead=[k.slice(0,n).join(' ')||d[0],f.slice(0,n).join(' ')||d[1]],rest=[k.slice(n).join(' '),f.slice(n).join(' ')];
   const crit=/반드시|꼭 |toujours/i.test(lead[0]+lead[1]),cl=crit?' crit':'',has=rest[0]||rest[1];
-  return `<p class="lead${cl}">${T(lead)}</p>`+(has||hx?`<details class="more"><summary>${T(["자세히 보기","Voir les détails"])}${ic('down',14)}</summary>${has?`<p>${T(rest)}</p>`:''}${hx}</details>`:'')}
+  return `<p class="lead${cl}">${T(lead)}</p>`+(has||hx?`<details class="more"${matchMedia('(min-width:1000px)').matches?' open':''}><summary>${T(["자세히 보기","Voir les détails"])}${ic('down',14)}</summary>${has?`<p>${T(rest)}</p>`:''}${hx}</details>`:'')}
 const MT=[["비자","Visa"],["영어","Anglais"],["서류 제출","Dépôt des documents"]];
 function render(){
   chrome();
-  app.className=view===3?'wide':'';
+  app.className=!view?'home':view===3?'wide':'';
   if(!view){app.innerHTML=mono(`<div class="hero"><svg class="pr" viewBox="0 0 60 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="104" width="44" height="8"/><rect x="13" y="96" width="34" height="8"/><rect x="18" y="88" width="24" height="8"/><path d="M24 88V40M36 88V40M28 88V40M32 88V40"/><rect x="21" y="34" width="18" height="6"/><rect x="23" y="30" width="14" height="4"/><ellipse cx="30" cy="22" rx="7" ry="8"/><path d="M30 14V4M26 8h8"/></svg>${ddHTML()}<div class="loc">LIÈGE · 50.6326° N 5.5797° E</div><h1>${T(["호주 스폰서 비자 가이드 (482)","Guide du visa sponsorisé Australie (482)"])}</h1><p>${T(["단계를 선택해 순서대로 확인하세요.","Choisissez une étape et suivez-la dans l'ordre."])}</p></div>${[1,2,3].map(n=>`<button class="mc" type="button" data-go="${n}"><span class="n">0${n}</span><span class="b"><span class="t">${T(MT[n-1])}</span></span>${ic('right',18)}</button>`).join('')}`);return}
   if(view!==lastView){lastView=view;sub=0;subj=0}
   let D=DECKS[view].c,top='';
@@ -511,7 +540,7 @@ function render(){
     if(c.scrub)x+=scrubHTML();if(c.faq)x+=faqHTML(c);
     if(c.steps)x+=`<div class="tl3">${c.steps.map(z=>`<div class="ts"><span class="bd mn">${z[0]}</span><div>${T(z[1])}</div></div>`).join('')}</div>`;
     return `<div class="card"><h2><span class="hn mn">${String(i+1).padStart(2,'0')}</span>${T(c.t)}</h2>${chunk(c.d,hx)}${x}</div>`};
-  app.innerHTML=mono(`<div class="eyebrow">${T(DECKS[view].h)}</div>${top}<div class="list">${D.map(one).join('')}</div>`);
+  app.innerHTML=mono(`<div class="bkbar"><button id="back2" type="button">${ic('left',16)}${T(["메뉴","Menu"])}</button></div><div class="eyebrow">${T(DECKS[view].h)}</div>${top}<div class="list">${D.map(one).join('')}</div>`);
 }
 function renderForm(){
   document.getElementById('form').innerHTML=fields.map(f=>{const v=me[f[0]]??'';let inp;
@@ -532,10 +561,10 @@ document.addEventListener('click',e=>{
   if(t.closest('#bLang')){setLang(lang==='both'?'ko':lang==='ko'?'fr':'both');return}
   if(t.closest('#closeOv')||t.id==='ov'){document.getElementById('ov').classList.remove('on');render();return}
   if(t.closest('#resetAll')){if(confirm(lang==='fr'?'Effacer toutes les informations ?':'입력한 내 정보를 모두 지울까요?')){me={occ:'322313',csol:'y',visa:'whv1',vexp:'2027-02-02'};try{localStorage.removeItem(KEY)}catch(x){}renderForm()}return}
-  if(t.closest('#back')){view=null;idx=0;render();return}
+  if(t.closest('#back,#back2')){goHome();return}
   const sb=t.closest('[data-sub]');if(sb){sub=+sb.dataset.sub;render();return}
   const sj=t.closest('[data-subj]');if(sj){subj=+sj.dataset.subj;render();return}
-  const g=t.closest('[data-go]');if(g){view=+g.dataset.go;idx=0;render();scrollTo(0,0);return}
+  const g=t.closest('[data-go]');if(g){view=+g.dataset.go;idx=0;try{history.pushState({deck:view,pushed:1},'','#step'+view)}catch(x){}render();scrollTo(0,0);return}
   if(t.closest('#pv')&&idx>0){idx--;render();return}
   if(t.closest('#nx')&&idx<DECKS[view].c.length-1){idx++;render();return}
   const cb=t.closest('[data-copy]');if(cb){const cd=(DECKS[view].cur||DECKS[view].c)[+cb.dataset.i],txt=cb.dataset.copy==='tpl'?cd.tpl:cd.c,o=cb.innerHTML,done=()=>{cb.classList.add('ok');cb.innerHTML=ic('check',14)+T(["복사됨","Copié"]);setTimeout(()=>{cb.classList.remove('ok');cb.innerHTML=o},1500)};
@@ -544,8 +573,46 @@ document.addEventListener('click',e=>{
 });
 document.addEventListener('input',e=>{const k=e.target.dataset&&e.target.dataset.k;if(!k)return;me[k]=e.target.value;if(k==='occ'){me.csol=me.occ==='other'?'':'y';renderForm()}try{localStorage.setItem(KEY,JSON.stringify(me))}catch(x){}});
 document.addEventListener('change',e=>{const c=e.target.dataset&&e.target.dataset.c;if(!c)return;chk[c]=e.target.checked;lastTick=e.target.checked?c:null;try{localStorage.setItem(CKEY,JSON.stringify(chk))}catch(x){}const y=scrollY;render();scrollTo(0,y)});
-let sx=null;document.addEventListener('touchstart',e=>{sx=e.target.closest('#card')?e.touches[0].clientX:null},{passive:true});
-document.addEventListener('touchend',e=>{if(sx==null||!view)return;const dx=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(dx)<60)return;const n=DECKS[view].c.length;if(dx<0&&idx<n-1)idx++;else if(dx>0&&idx>0)idx--;else return;render()});
+/* 뒤로가기: 브라우저 기록 + 스와이프 + 키보드 */
+const deckFromHash=()=>{const m=/^#step([1-3])$/.exec(location.hash);return m&&DECKS[+m[1]]?+m[1]:null};
+function goHome(){
+  if(!view)return;
+  /* 이 화면에서 우리가 쌓은 기록이면 한 칸 뒤로, 링크로 바로 들어온 경우면 주소만 정리해서 메뉴로 */
+  if(history.state&&history.state.pushed){history.back();return}
+  view=null;idx=0;
+  try{history.replaceState({deck:null},'',location.pathname+location.search)}catch(x){}
+  render();scrollTo(0,0);
+}
+addEventListener('popstate',()=>{
+  const v=deckFromHash();
+  if(v===view)return;
+  view=v;idx=0;document.getElementById('ov').classList.remove('on');render();scrollTo(0,0);
+});
+/* 처음 열 때 주소에 #step1~3이 있으면 그 단계로 바로 */
+view=deckFromHash();idx=0;
+let sw=null;
+const noSwipe=el=>{for(;el&&el!==document.body;el=el.parentElement){
+  if(/^(INPUT|SELECT|TEXTAREA|PRE)$/.test(el.tagName)||el.classList.contains('scr'))return true;
+  if(el.scrollWidth>el.clientWidth+4&&/(auto|scroll)/.test(getComputedStyle(el).overflowX))return true}
+  return false};
+document.addEventListener('touchstart',e=>{
+  if(!view||e.touches.length!==1||document.getElementById('ov').classList.contains('on')){sw=null;return}
+  const t=e.touches[0];
+  /* 화면 맨 왼쪽 가장자리는 iOS가 직접 '뒤로'를 처리하므로 건드리지 않음 */
+  if(t.clientX<24||noSwipe(e.target)){sw=null;return}
+  sw={x:t.clientX,y:t.clientY,t:Date.now()};
+},{passive:true});
+document.addEventListener('touchend',e=>{
+  if(!sw||!view)return;
+  const t=e.changedTouches[0],dx=t.clientX-sw.x,dy=t.clientY-sw.y,dt=Date.now()-sw.t;sw=null;
+  if(dx>70&&Math.abs(dy)<Math.abs(dx)*.5&&dt<700)goHome();
+},{passive:true});
+document.addEventListener('keydown',e=>{
+  if(e.key!=='Escape'||!view)return;
+  const ov=document.getElementById('ov');
+  if(ov.classList.contains('on')){ov.classList.remove('on');render();return}
+  goHome();
+});
 setLang(lang);
 
 </script>
@@ -584,12 +651,6 @@ addEventListener('scroll',()=>{$$('prog').style.transform='scaleX('+(scrollY/((d
 let prevPb=null,pk=null,lastTick=null;
 function reveal(){if(!G||!window.IntersectionObserver)return;const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){io.unobserve(e.target);G.to(e.target,{opacity:1,y:0,duration:.75,ease:'power3.out'})}}),{rootMargin:'0px 0px -6% 0px'});document.querySelectorAll('.list>.card').forEach(el=>{G.set(el,{opacity:0,y:16});io.observe(el)})}
 document.addEventListener('change',e=>{if(e.target.dataset&&e.target.dataset.c)prevPb=[...document.querySelectorAll('.pb i')].map(i=>i.style.width)},true);
-document.body.insertAdjacentHTML('beforeend','<div id="secpill" role="status"></div>');
-function updPill(){const pl=$$('secpill');if(!view){pl.classList.remove('on');return}
-  const cs=[...document.querySelectorAll('.list>.card')];let i=0;cs.forEach((c,j)=>{if(c.getBoundingClientRect().top<innerHeight*.45)i=j});
-  const h=DECKS[view].h,t=(lang==='fr'?h[1]:h[0]).split(' · ')[0];
-  pl.innerHTML='<b>'+t+'</b><span class="mn">'+pad(i+1)+'/'+pad(cs.length)+'</span>';pl.classList.add('on')}
-addEventListener('scroll',updPill,{passive:true});
 function post(){
   if(lastTick){const inp=document.querySelector('[data-c="'+lastTick+'"]');lastTick=null;if(G&&inp&&inp.checked){G.fromTo(inp.nextElementSibling.querySelector('path'),{strokeDashoffset:1},{strokeDashoffset:0,duration:.55,ease:'power3.out'});G.fromTo(inp,{scale:.82},{scale:1,duration:.6,ease:'elastic.out(1,.5)'})}}
   if(!G)return;
@@ -597,7 +658,7 @@ function post(){
   if(key!==pk){pk=key;if(!view){G.from('.hero h1',{yPercent:80,duration:1.1,ease:'power4.out'});G.from('.mc',{y:24,opacity:0,duration:.8,ease:'power4.out',stagger:.1,delay:.15})}else reveal()}
   if(prevPb){const bars=[...document.querySelectorAll('.pb i')];bars.forEach((b,j)=>{const to=b.style.width;if(prevPb[j]!==undefined&&prevPb[j]!==to)G.fromTo(b,{width:prevPb[j]},{width:to,duration:.9,ease:'elastic.out(1,.7)'})});prevPb=null}
 }
-const _r=render;render=function(){_r();post();updPill()};post();updPill();
+const _r=render;render=function(){_r();post()};post();
 </script>
 </body>
 </html>
