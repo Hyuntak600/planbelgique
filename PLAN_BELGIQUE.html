@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<title>호주 스폰서 비자 가이드 (482) · Guide du visa sponsorisé Australie (482)</title>
+<style>
+
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 Inter,"Pretendard Variable",Pretendard,system-ui,sans-serif;letter-spacing:-.01em;-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit;cursor:pointer;background:none;border:0;padding:0}
+.ic{flex:none;display:block}
+.ko,.fr{display:block}
+.ko{color:var(--tx);font-weight:500;font-family:"Pretendard Variable",Pretendard,Inter,sans-serif}
+.fr{color:var(--sub);font-size:.875em;font-weight:400;font-family:Inter,"Pretendard Variable",sans-serif}
+body[data-lang=ko] .fr,body[data-lang=fr] .ko{display:none}
+body[data-lang=both] .fr{margin-top:2px}
+body[data-lang=fr] .fr{color:var(--tx);font-size:1em;font-weight:500}
+.mn{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;font-size:.92em;letter-spacing:-.02em}
+header{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;gap:10px;height:56px;padding:0 16px;background:var(--hd);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--ln)}
+.hl{display:flex;align-items:center;min-width:0}.hr{display:flex;align-items:center;gap:8px}
+.logo{width:20px;height:20px;border-radius:6px;background:var(--tx);position:relative}.logo:after{content:"";position:absolute;left:5px;bottom:5px;width:10px;height:3px;border-radius:2px;background:var(--ac)}
+#back{display:none;align-items:center;gap:6px;height:34px;padding:0 10px 0 8px;border-radius:10px;border:1px solid var(--ln);background:var(--sf);font-size:13.5px}
+#back.on{display:inline-flex}#back .ko,#back .fr{display:inline}#back .fr{margin:0 0 0 4px}
+.seg{display:flex;padding:3px;border-radius:999px;background:var(--mut);border:1px solid var(--ln)}
+.seg button{height:28px;padding:0 11px;border-radius:999px;font:500 12px "JetBrains Mono",monospace;color:var(--sub);transition:all .2s}
+.seg button[aria-pressed=true]{background:var(--sf);color:var(--tx);box-shadow:0 1px 2px rgba(16,24,40,.08)}
+.gear{width:36px;height:36px;display:flex;align-items:center;justify-content:center;border-radius:10px;border:1px solid var(--ln);background:var(--sf);color:var(--sub);transition:all .2s}.gear:hover{color:var(--tx)}
+.menu{position:fixed;top:62px;right:12px;z-index:11;min-width:190px;background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:6px;display:none;flex-direction:column;gap:2px;box-shadow:0 8px 24px rgba(16,24,40,.08)}
+.menu.on{display:flex}
+.menu button{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:9px;font-size:14px;text-align:left;transition:background .2s}.menu button:hover{background:var(--mut)}.menu .ic{color:var(--sub)}
+.menu .ko,.menu .fr{display:inline}.menu .fr{margin:0 0 0 6px}
+main{max-width:640px;margin:0 auto;padding:20px 16px 56px}
+.hero{background:var(--dk);border-radius:20px;padding:32px 24px;margin-bottom:16px}
+.hero h1{margin:0;font-size:clamp(26px,6.5vw,34px);line-height:1.2;letter-spacing:-.03em;font-weight:600}
+.hero .ko{color:#fff;font-weight:600}.hero .fr{color:#A9A79F;font-weight:400;font-size:.55em;margin-top:8px}
+body[data-lang=fr] .hero .fr{color:#fff;font-size:1em;font-weight:600;margin-top:0}
+.hero p{margin:14px 0 0;font-size:15px}.hero p .ko{color:#D8D6CF;font-weight:400}.hero p .fr{color:#A9A79F}
+body[data-lang=fr] .hero p .fr{color:#D8D6CF;font-weight:400}
+.mc{display:flex;align-items:center;gap:16px;width:100%;text-align:left;background:var(--sf);border:1px solid var(--ln);border-radius:16px;padding:18px;margin-bottom:10px;box-shadow:0 1px 2px rgba(16,24,40,.04);transition:all .2s}
+.mc:hover{border-color:var(--ac);transform:translateY(-1px)}
+.mc .n{font:500 13px "JetBrains Mono",monospace;color:var(--ac);align-self:flex-start;padding-top:3px}
+.mc .b{flex:1;min-width:0}.mc .t{font-size:18px;font-weight:600;letter-spacing:-.02em}.mc .t .fr{font-size:.8em}
+.mc .s{margin-top:6px;font-size:14px}.mc .ic{color:var(--sub);transition:transform .2s}.mc:hover .ic{transform:translateX(3px);color:var(--ac)}
+.eyebrow{font:500 12px "JetBrains Mono",monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--sub);margin:0 2px 10px}.eyebrow span{display:inline}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:16px;padding:24px 22px;min-height:320px;display:flex;flex-direction:column;gap:14px;box-shadow:0 1px 2px rgba(16,24,40,.04);transition:all .2s}
+.card:hover{border-color:rgba(148,163,184,.6)}
+.card h2{margin:0;font-size:23px;line-height:1.3;letter-spacing:-.025em}
+.card h2 .ko{font-weight:600}.card h2 .fr{font-size:.65em;margin-top:4px}body[data-lang=fr] .card h2 .fr{font-size:1em;font-weight:600}
+.card p{margin:0;font-size:16px;line-height:1.65}
+.tags{display:flex;gap:6px;flex-wrap:wrap}.tags span{display:inline-flex;align-items:center;gap:6px;font:500 11.5px "JetBrains Mono",monospace;letter-spacing:.02em;color:var(--sub);border:1px solid var(--ln);border-radius:6px;padding:2px 8px;background:var(--mut)}
+.tags span:before{content:"";width:5px;height:5px;border-radius:50%;background:var(--ac)}.tags .fr{margin:0}
+.chip{align-self:flex-start;display:flex;flex-wrap:wrap;align-items:center;gap:2px 8px;border:1px solid var(--ln);border-radius:12px;padding:6px 12px 6px 9px;font-size:13px;background:var(--mut)}
+.chip .ko,.chip .fr{display:inline;margin:0}.chip .ko{font-weight:500}
+.chip .ic{margin-right:2px}
+.c-ok{color:var(--tx)}.c-ok>.ic{color:var(--tx)}
+.c-no{background:var(--acs);border-color:rgba(232,93,42,.35)}.c-no>.ic{color:var(--ac)}
+.c-un{color:var(--sub)}
+.st{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.st div{border:1px solid var(--ln);border-radius:12px;padding:12px;background:var(--bg)}
+.st b{display:block;font:600 19px "JetBrains Mono",monospace;letter-spacing:-.03em;color:var(--tx)}.st b .ko,.st b .fr{font:inherit;color:inherit;font-size:inherit}.st b .fr{font-size:.7em;color:var(--sub);font-family:Inter,sans-serif;font-weight:400}
+.st span{font-size:13px;display:block;margin-top:4px}
+.rw{border-top:1px solid var(--ln);padding:12px 0 0;font-size:14.5px}
+.rw b{display:block;margin-bottom:2px}.rw b .ko{font-weight:600}.rw b .fr{font-weight:500}
+pre{margin:0;white-space:pre-wrap;background:var(--bg);border:1px solid var(--ln);border-radius:12px;padding:14px;font:400 13px/1.7 "JetBrains Mono",ui-monospace,monospace;color:var(--tx)}
+.cb,.lnk{align-self:flex-start;display:inline-flex;align-items:center;gap:7px;height:36px;padding:0 14px;border-radius:10px;background:var(--tx);color:var(--bg);font-size:13.5px;font-weight:500;text-decoration:none;transition:all .2s}
+.cb:hover,.lnk:hover{opacity:.88}.cb.ok{background:var(--ac);color:#fff}
+.cb .ko,.cb .fr,.lnk .ko{display:inline;color:inherit;font-weight:500}.cb .fr{margin:0}
+.acc{border:1px solid var(--ln);border-radius:12px;padding:0 14px;margin-top:auto;background:var(--bg)}
+.acc summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:12px 0;font-size:14.5px;font-weight:600}
+.acc summary::-webkit-details-marker{display:none}.acc summary .ic{color:var(--sub);transition:transform .2s}.acc[open] summary .ic{transform:rotate(180deg)}
+.acc>pre{margin:0 0 12px;background:var(--sf)}.acc>.cb{margin-bottom:14px}
+.pb{height:6px;border-radius:99px;background:var(--mut);overflow:hidden}.pb i{display:block;height:100%;background:var(--ac);border-radius:99px;transition:width .3s}
+.cnt{font:500 12.5px "JetBrains Mono",monospace;color:var(--sub)}
+.ck{display:flex;gap:12px;align-items:flex-start;padding:11px 0;border-top:1px solid var(--ln);cursor:pointer;font-size:15px}
+.ck input{flex:none;width:18px;height:18px;margin-top:3px;accent-color:var(--ac);cursor:pointer}
+.ck.done .ko,.ck.done .fr{color:var(--sub);text-decoration:line-through}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px}
+.nav .ib{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:104px;height:40px;padding:0 14px;border:1px solid var(--ln);border-radius:10px;background:var(--sf);font-size:14px;transition:all .2s}
+.nav .ib:hover:not(:disabled){border-color:var(--tx)}.nav .ib:disabled{opacity:.35;cursor:default}
+.nav .ko,.nav .fr{display:inline;margin:0}.nav .fr{margin-left:4px}
+.dots{display:flex;gap:5px;justify-content:center;flex-wrap:wrap;margin-top:16px}.dots i{width:6px;height:6px;border-radius:50%;background:var(--ln);transition:all .2s}.dots i.on{background:var(--tx);width:18px;border-radius:99px}
+.ov{position:fixed;inset:0;z-index:20;background:rgba(24,24,23,.45);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);display:none;align-items:flex-end;justify-content:center}.ov.on{display:flex}
+.sheet{background:var(--sf);width:100%;max-width:560px;max-height:88vh;overflow:auto;border-radius:20px 20px 0 0;padding:22px;border:1px solid var(--ln)}
+.sheet h3{margin:0 0 6px;font-size:18px;font-weight:600;display:flex;align-items:center;gap:8px}.sheet h3 .ko,.sheet h3 .fr{display:inline}.sheet h3 .fr{margin:0 0 0 6px}
+.note{color:var(--sub);font-size:13px}
+.f{display:flex;flex-direction:column;gap:6px;margin-bottom:14px;font-size:14px}.f small{color:var(--sub);font-size:12.5px;font-weight:400}
+input[type=number],input[type=date],select{height:40px;padding:0 12px;border:1px solid var(--ln);border-radius:10px;background:var(--sf);color:var(--tx);font:400 15px Inter,"Pretendard Variable",sans-serif;width:100%;transition:border-color .2s}
+input[type=number],input[type=date]{font-family:"JetBrains Mono",monospace}
+input:focus,select:focus{outline:0;border-color:var(--ac);box-shadow:0 0 0 3px rgba(232,93,42,.15)}
+.sb{display:inline-flex;align-items:center;height:38px;padding:0 14px;border-radius:10px;border:1px solid var(--ln);background:var(--sf);font-size:14px}.sb.p{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+.sb .ko,.sb .fr{display:inline;color:inherit}.sb .fr{margin:0}
+@media (max-width:420px){.seg button{padding:0 8px}header{padding:0 12px}}
+.logo{width:auto;height:auto;background:none;border-radius:0;position:static;display:flex;align-items:center;gap:9px;color:var(--ac)}.logo:after{display:none}
+.logo b{font:600 12px "JetBrains Mono",monospace;letter-spacing:.14em;color:var(--tx)}
+.hero{position:relative;overflow:hidden;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:24px 24px}
+.hero>*{position:relative;z-index:1}
+.hero .pr{position:absolute;right:20px;bottom:-6px;height:170px;width:auto;color:rgba(255,255,255,.16);z-index:0}
+.hero .loc{display:flex;align-items:center;gap:8px;font:500 11.5px "JetBrains Mono",monospace;letter-spacing:.08em;color:#A9A79F;margin-bottom:18px}
+.hero .loc:before{content:"";width:18px;height:2px;background:var(--ac)}
+.hero h1,.hero p{max-width:78%}
+.list{display:flex;flex-direction:column;gap:14px}
+.list .card{min-height:0}
+.sub{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}
+.sub button{padding:8px 12px;border-radius:999px;border:1px solid var(--ln);background:var(--sf);font-size:13.5px;color:var(--sub);transition:all .2s}
+.sub .ko,.sub .fr{display:inline}.sub .fr{margin-left:4px}
+.sub button[aria-pressed=true]{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+.sub button[aria-pressed=true] .ko,.sub button[aria-pressed=true] .fr{color:inherit}
+.sub.s2 button[aria-pressed=true]{background:var(--ac);border-color:var(--ac);color:#fff}
+.sd{margin:0 2px 14px;font-size:14.5px}
+.hn{display:block;font:500 13px "JetBrains Mono",monospace;color:var(--ac);margin-bottom:4px}
+.gauge{border:1px solid var(--ln);border-radius:12px;padding:16px;background:var(--bg);display:flex;flex-direction:column;gap:10px}
+.gb{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}.gb b{font-size:34px;font-weight:600;letter-spacing:-.04em}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:12px;align-items:start}
+.mcat{border:1px solid var(--ln);border-radius:14px;padding:4px 16px 6px;background:var(--bg)}
+.mh{display:flex;align-items:center;gap:10px;padding:12px 0 10px;font-weight:600;font-size:15px}.mh .ic{color:var(--ac)}
+.mcat .ck{font-size:14px;padding:10px 0}
+.tl3{display:flex;flex-direction:column}
+.ts{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--ln);font-size:15px}
+.bd{flex:none;height:24px;padding:0 8px;border:1px solid var(--ln);border-radius:6px;background:var(--mut);font-size:12px;color:var(--ac);display:inline-flex;align-items:center}
+main.wide{max-width:1040px}
+
+:root{--bg:#F7F6F2;--sf:#FFFFFF;--tx:#181817;--sub:#5E5D59;--ln:#E4E2DC;--ac:#E85D2A;--acs:#FCEBE3;--mut:#EFEDE7;--hd:rgba(247,246,242,.94);--dk:#181817;--ok:#2A6F4E;--oks:#E3F0E9;--ease:cubic-bezier(.22,1,.36,1);color-scheme:light}
+*,*:before,*:after{border-radius:0!important;box-shadow:none!important}
+body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+body:before{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;opacity:.04;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.hero{overflow:hidden}
+.hero h1,.card h2,.mc .t{font-family:'Space Grotesk',Inter,sans-serif;letter-spacing:-.04em}
+.hero h1{line-height:.98}
+header{position:sticky}
+#prog{position:absolute;left:0;bottom:-1px;height:2px;width:100%;background:var(--ac);transform:scaleX(0);transform-origin:0 50%}
+.ck.done span{text-decoration:line-through;color:var(--sub)}
+#dock{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--bg);border-top:1px solid var(--ln);padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+#dock button{min-height:46px;padding:0 4px;border:1px solid var(--tx);background:var(--bg);color:var(--tx);font:500 12px "JetBrains Mono",monospace;cursor:pointer;will-change:transform}
+#dock button.go{background:var(--tx);color:var(--bg)}
+#dock button:hover,#dock button:focus-visible{border-color:var(--ac)}
+#dock .ko,#dock .fr{font:inherit;color:inherit}
+.scr input{-webkit-appearance:none;appearance:none;width:100%;height:48px;background:transparent;margin:0;touch-action:none}
+.scr input::-webkit-slider-runnable-track{height:1px;background:var(--tx)}
+.scr input::-moz-range-track{height:1px;background:var(--tx)}
+.scr input::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:40px;margin-top:-20px;background:var(--ac);border:1px solid var(--tx)}
+.scr input::-moz-range-thumb{width:18px;height:40px;background:var(--ac);border:1px solid var(--tx)}
+.scr .big{font:500 44px/1 "JetBrains Mono",monospace;letter-spacing:-.04em}
+.scr .stg{border:1px solid var(--tx);padding:16px;margin-top:12px}
+.fq{border-top:1px solid var(--ln)}
+.fq>button{display:flex;width:100%;justify-content:space-between;gap:14px;align-items:center;background:none;border:0;padding:16px 0;color:inherit;font:600 16px/1.35 Inter,sans-serif;text-align:left;cursor:pointer}
+.fq svg{flex:none;width:20px;height:20px;stroke:currentColor;stroke-width:2;fill:none}
+.fq[data-open=true] svg{stroke:var(--ac)}
+.fq .a{height:0;overflow:hidden}.fq .a>div{padding:0 0 16px;font-size:15px}
+#toast{position:fixed;left:50%;bottom:calc(88px + env(safe-area-inset-bottom,0px));transform:translate(-50%,16px);background:var(--tx);color:var(--bg);padding:12px 16px;font:500 13px "JetBrains Mono",monospace;border-left:4px solid var(--ac);opacity:0;pointer-events:none;z-index:50;transition:all .25s cubic-bezier(.16,1,.3,1)}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+
+.dd{display:grid;grid-template-columns:1fr auto;align-items:end;gap:2px 16px;width:100%;text-align:left;margin:0 0 10px;padding:16px 18px;border:1px solid var(--tx);background:var(--sf);transition:border-color .2s}
+.dd:hover{border-color:var(--ac)}
+.dd .dl{grid-column:1/-1;font-size:13.5px;color:var(--sub)}
+.dd .dl .ko,.dd .dl .fr,.dd .ds .ko,.dd .ds .fr{color:inherit;font-weight:400}
+.dd .dn{grid-row:2;font:500 44px/1 "JetBrains Mono",monospace;letter-spacing:-.04em;color:var(--ac)}
+.dd.soon .dn{color:var(--ac)}.dd.past .dn{color:var(--sub)}
+.dd .ds{grid-row:2;grid-column:2;font-size:13px;color:var(--sub);text-align:right;padding-bottom:4px}
+
+/* ===== scan-friendly reading ===== */
+.ck input{-webkit-appearance:none;appearance:none;width:24px;height:24px;margin-top:1px;border:1.5px solid var(--tx);background:var(--sf);transition:all .45s var(--ease)}
+.lead.crit{background:var(--acs)}
+#secpill{border-radius:0}
+:root{--r:0}
+.card,.mc,.dd,.gauge,.mcat,.sheet{border-radius:var(--r)!important}
+.card p,.rw,.sd{max-width:65ch;line-height:1.65}
+.card .lead{font-size:17px;font-weight:500}
+.card .lead .ko{font-weight:600}
+.lead.crit{background:var(--acs);border:1px solid rgba(232,93,42,.28);border-left:3px solid var(--ac);border-radius:12px;padding:12px 14px;font-weight:600}
+.more{border-top:1px solid var(--ln);padding-top:2px}
+.more summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:6px;padding:9px 0;font-size:13.5px;font-weight:500;color:var(--ac)}
+.more summary::-webkit-details-marker{display:none}
+.more summary .ko,.more summary .fr{display:inline;color:inherit}.more summary .fr{margin:0}
+.more summary .ic{transition:transform .4s var(--ease)}.more[open] summary .ic{transform:rotate(180deg)}
+.more[open]>p{animation:fu .5s var(--ease)}
+@keyframes fu{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.more>p{color:var(--sub);font-size:15.5px}
+.rw b .ko,.rw b .fr{color:var(--tx)}
+.rw{position:relative;padding-left:14px}.rw:before{content:"";position:absolute;left:0;top:14px;bottom:2px;width:2px;background:var(--ac);opacity:.6}
+.hn{display:inline-block;padding:2px 8px;border:1px solid var(--ln);border-radius:6px;background:var(--mut);font-size:12px;margin-bottom:8px}
+.bx{position:relative;flex:none;width:24px;height:24px;margin-top:1px}
+.bx input{margin:0!important}
+.ck input:checked{background-color:var(--ok)!important;border-color:var(--ok)!important;background-image:none!important}
+.tk{position:absolute;inset:4px;width:16px;height:16px;fill:none;stroke:#fff;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.tk path{stroke-dasharray:1;stroke-dashoffset:1}
+.ck input:checked+.tk path{stroke-dashoffset:0}
+#secpill{position:fixed;left:50%;top:calc(66px + env(safe-area-inset-top,0px));z-index:9;transform:translate(-50%,-8px);display:flex;gap:10px;align-items:center;max-width:80%;padding:6px 14px;border-radius:999px;background:var(--tx);color:var(--bg);font-size:12.5px;opacity:0;pointer-events:none;transition:all .45s var(--ease);white-space:nowrap}
+#secpill.on{opacity:.94;transform:translate(-50%,0)}
+#secpill b{font-weight:500;overflow:hidden;text-overflow:ellipsis}
+#secpill .mn{color:#F3B79F}
+@media (prefers-reduced-motion:reduce){.more[open]>p{animation:none}}
+
+.hero .dd{position:absolute;top:12px;right:12px;z-index:2;display:flex;flex-direction:column;align-items:flex-end;width:auto;margin:0;padding:5px 9px;gap:0;background:transparent;border:1px solid rgba(255,255,255,.28)}
+.hero .dd:hover{border-color:var(--ac)}
+.hero .dd .dn{font:500 17px/1.1 "JetBrains Mono",monospace;letter-spacing:-.03em;color:var(--ac)}
+.hero .dd .ds{font:400 10px/1.3 "JetBrains Mono",monospace;color:#A9A79F;padding:0;text-align:right}
+.hero .dd.past .dn{color:#A9A79F}
+body{padding-bottom:calc(28px + env(safe-area-inset-bottom,0px))!important}
+.hero .dd{cursor:default;pointer-events:none}.hero .dd:hover{border-color:rgba(255,255,255,.28)}
+
+/* macOS-style glowing menu tiles */
+.mc{align-items:center;min-height:88px;padding:22px 20px;border-radius:18px!important;border:1px solid rgba(24,24,23,.08)!important;background:linear-gradient(180deg,#FFFFFF 0%,rgba(255,255,255,.72) 100%)!important;box-shadow:inset 0 1px 0 #fff,0 1px 2px rgba(24,24,23,.04),0 10px 26px -14px rgba(232,93,42,.32)!important;-webkit-backdrop-filter:saturate(1.4) blur(14px);backdrop-filter:saturate(1.4) blur(14px);transition:transform .5s var(--ease),box-shadow .5s var(--ease),border-color .5s var(--ease)}
+.mc:hover,.mc:focus-visible{transform:translateY(-2px);border-color:rgba(232,93,42,.45)!important;box-shadow:inset 0 1px 0 #fff,0 0 0 4px rgba(232,93,42,.10),0 16px 34px -12px rgba(232,93,42,.5)!important}
+.mc:active{transform:scale(.985)}
+.mc .t{font-size:24px!important}
+.mc .n{align-self:center;padding:0}
+.mc .ic{box-sizing:border-box;width:32px;height:32px;padding:7px;border-radius:50%!important;background:var(--mut);box-shadow:inset 0 1px 0 #fff!important}
+.mc:hover .ic{background:var(--ac);color:#fff}
+
+/* French first and larger */
+body[data-lang=both] .fr,body[data-lang=fr] .fr{font-size:1.06em;font-weight:500;color:var(--tx);margin-top:0}
+body[data-lang=both] .ko{font-size:.84em;font-weight:400;color:var(--sub);margin-top:2px}
+body[data-lang=both] .hero h1 .fr,body[data-lang=fr] .hero h1 .fr{font-size:1em;font-weight:600;color:#fff;margin-top:0}
+body[data-lang=both] .hero h1 .ko{font-size:.5em;font-weight:400;color:#A9A79F;margin-top:8px}
+body[data-lang=both] .hero p .fr,body[data-lang=fr] .hero p .fr{font-size:1.06em;color:#D8D6CF;font-weight:400}
+body[data-lang=both] .hero p .ko{color:#A9A79F}
+body[data-lang=both] .card h2 .fr,body[data-lang=fr] .card h2 .fr{font-size:1em;font-weight:600}
+body[data-lang=both] .card h2 .ko{font-size:.62em;font-weight:400;margin-top:4px}
+body[data-lang=both] .mc .t .fr,body[data-lang=fr] .mc .t .fr{font-size:1em;font-weight:600}
+body[data-lang=both] .mc .t .ko{font-size:.62em;font-weight:400}
+body[data-lang=both] .st b .fr,body[data-lang=fr] .st b .fr{font-size:1em;color:var(--tx);font-family:"JetBrains Mono",monospace;font-weight:600}
+body[data-lang=both] .st b .ko{font-size:.62em;color:var(--sub);font-weight:400;font-family:Inter,"Pretendard Variable",sans-serif}
+body[data-lang=both] .card .lead .fr,body[data-lang=fr] .card .lead .fr{font-weight:600}
+body[data-lang=both] .card .lead .ko{font-weight:400}
+body[data-lang=both] .rw b .fr,body[data-lang=fr] .rw b .fr{font-weight:600;color:var(--tx)}
+body[data-lang=both] .rw b .ko{font-weight:400;color:var(--sub)}
+body[data-lang=both] :is(#back,.menu button,.sub button,.nav,.sheet h3,.sb,.cb,.chip,.more summary) .fr{margin:0 6px 0 0}
+body[data-lang=both] :is(#back,.menu button,.sub button,.nav,.sheet h3,.sb,.cb,.chip,.more summary) .ko{margin:0;font-size:.85em}
+body[data-lang=both] .sub button[aria-pressed=true] .fr,body[data-lang=both] .sub button[aria-pressed=true] .ko{color:inherit}
+body[data-lang=both] .cb .fr,body[data-lang=both] .cb .ko,body[data-lang=both] .sb.p .fr,body[data-lang=both] .sb.p .ko{color:inherit}
+
+body[data-lang=fr] .ko{display:none!important}
+body[data-lang=ko] .fr{display:none!important}
+
+.lnk .fr{margin:0}
+
+.more .st,.more .tl3,.more .acc{margin-top:10px}.more>.rw:first-of-type{margin-top:10px}.more>.rw{max-width:none}
+</style>
+</head>
+<body data-lang="fr">
+<header><div class="hl"><button id="back" type="button"></button><span class="logo" id="logo" aria-hidden="true"><svg class="pr" width="12" height="24" viewBox="0 0 60 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="104" width="44" height="8"/><rect x="13" y="96" width="34" height="8"/><rect x="18" y="88" width="24" height="8"/><path d="M24 88V40M36 88V40M28 88V40M32 88V40"/><rect x="21" y="34" width="18" height="6"/><rect x="23" y="30" width="14" height="4"/><ellipse cx="30" cy="22" rx="7" ry="8"/><path d="M30 14V4M26 8h8"/></svg><b>LIÈGE</b></span></div><div class="hr"><div class="seg" id="seg" role="group" aria-label="Language / 언어"><button type="button" data-l="both">KO·FR</button><button type="button" data-l="ko">KO</button><button type="button" data-l="fr">FR</button></div><button class="gear" id="gear" type="button" aria-label="Settings"></button></div><div id="prog"></div></header>
+<div class="menu" id="menu"><button id="bInfo" type="button"></button><button id="bLang" type="button"></button></div>
+<main id="app"></main>
+<div class="ov" id="ov"><div class="sheet"><h3 id="ovh"></h3><p class="note" style="margin:0 0 16px"><span class="fr">Les cartes affichent aussitôt ✓/✗. Données enregistrées uniquement dans ce navigateur.</span><span class="ko">입력하면 카드에 ✓/✗가 바로 표시돼요. 이 브라우저에만 저장돼요.</span></p><div id="form"></div><button class="sb" id="resetAll" type="button"><span class="fr">Effacer</span><span class="ko">정보 지우기</span></button> <button class="sb p" id="closeOv" type="button"><span class="fr">Fermer</span><span class="ko">닫기</span></button></div></div>
+<script>
+const R={csit:79499,ssit:146717,trt:2};
+const KEY='visaGuide1',LKEY='visaGuideLang2',CKEY='visaGuideChk',EKEY='visaGuideEn';
+let me={};try{me=JSON.parse(localStorage.getItem(KEY))||{}}catch(e){}
+if(me.occ===undefined){me.occ='322313';if(!me.csol)me.csol='y'}
+if(me.visa===undefined)me.visa='whv1';if(me.vexp===undefined)me.vexp='2027-02-02';
+let chk={};try{chk=JSON.parse(localStorage.getItem(CKEY))||{}}catch(e){}
+let en={};try{en=JSON.parse(localStorage.getItem(EKEY))||{}}catch(e){}
+if(en.test!=='pte'&&en.test!=='ielts')en.test='pte';if(en.goal!=='482'&&en.goal!=='186')en.goal='482';
+let lang='fr';try{const l=localStorage.getItem(LKEY);if(l==='ko'||l==='fr'||l==='both')lang=l}catch(e){}
+const T=p=>`<span class="fr">${p[1]}</span><span class="ko">${p[0]}</span>`;
+const E=(em,p)=>`<span class="em">${em}</span><span>${T(p)}</span>`;
+const OT=p=>lang==='ko'?p[0]:lang==='fr'?p[1]:p[0]+' / '+p[1];
+const occs=[['322313',["용접공 Welder (First Class) 322313","Soudeur de première classe (Welder First Class) 322313"]],['322312',["압력용접공 Pressure Welder 322312","Soudeur haute pression (Pressure Welder) 322312"]],['other',["기타 직업 (직접 확인)","Autre métier (à vérifier)"]]];
+const VISAS=[['whv1',["워킹홀리데이 1차","Working Holiday – 1re année"]],['whv2',["워킹홀리데이 2차","Working Holiday – 2e année"]],['whv3',["워킹홀리데이 3차","Working Holiday – 3e année"]],['482',["482 스폰서 비자","Visa sponsorisé 482"]],['bva',["브리징 비자","Bridging Visa"]],['other',["기타","Autre"]]];
+const fields=[
+ ['visa',["현재 비자","Visa actuel"],'visa',["기본값은 워킹홀리데이 1차예요","Par défaut : Working Holiday 1re année"]],
+ ['vexp',["현재 비자 만료일","Date d'expiration du visa"],'date',["메인 화면 D-day에 쓰여요","Sert au compte à rebours sur l'écran d'accueil"]],
+ ['occ',["내 직업","Mon métier"],'occ',["기본값은 용접공이에요. 다른 직업이면 바꾸세요","Soudeur par défaut. Changez si le métier est différent"]],
+ ['age',["나이","Âge"],'number',["신청할 때 기준","À la date de la demande"]],
+ ['csol',["내 직업이 CSOL 목록에 있나요?","Mon métier figure-t-il sur la CSOL ?"],'yn',["모르면 ‘모름’","Si incertain, choisissez « Je ne sais pas »"]],
+ ['sa',["긍정적 기술평가(skills assessment)가 있나요?","Ai-je une évaluation des compétences (skills assessment) positive ?"],'yn',""],
+ ['sponsor',["승인된 스폰서 고용주가 있고 지명해 주나요?","Ai-je un employeur sponsor agréé qui me nomine ?"],'yn',""],
+ ['salary',["제시받은 연봉 (AUD, 연)","Salaire annuel proposé (AUD)"],'number',["기본 연봉","Salaire de base"]],
+ ['amsr',["같은 직업 시장 임금 AMSR (AUD)","Salaire du marché AMSR pour ce métier (AUD)"],'number',["모르면 비워 두세요","Laissez vide si inconnu"]],
+ ['exp',["해당 직업 경력 (년, 풀타임 환산)","Expérience dans ce métier (années, équivalent temps plein)"],'number',["최근 5년 안 경력","Expérience des 5 dernières années"]],
+ ['eng',["영어: 각 영역 중 가장 낮은 IELTS","Anglais : le score IELTS le plus bas parmi les épreuves"],'number',["예: 5, 6.5","Ex. : 5 ; 6,5"]],
+ ['engEx',["영어 면제 대상 국가 여권인가요?","Passeport d'un pays dispensé du test d'anglais ?"],'yn',["면제국이면 시험 불필요","Si dispensé, aucun test requis"]],
+ ['onVisa',["현 고용주 밑 482 근무 (년)","Années en visa 482 chez l'employeur actuel"],'number',""],
+ ['hc',["건강검진·범죄경력 문제 없나요?","Aucun problème de visite médicale / casier judiciaire ?"],'yn',""],
+ ['docs',["영문 번역 서류를 준비했나요?","Documents traduits en anglais prêts ?"],'yn',""]
+];
+const yn=[['',["모름","Je ne sais pas"]],['y',["예","Oui"]],['n',["아니오","Non"]]];
+const N=k=>{const v=me[k];return v===undefined||v===''||isNaN(+v)?null:+v};
+const Y=k=>me[k]==='y'?true:me[k]==='n'?false:null;
+const fK=n=>'AUD '+n.toLocaleString('en-US');
+const fF=n=>n.toLocaleString('fr-FR')+' AUD';
+const engAt=m=>{if(Y('engEx')===true)return[true,["영어 면제국 여권","Passeport d'un pays dispensé"]];const e=N('eng');return e==null?[null,'']:[e>=m,["내 최저 IELTS "+e,"Mon IELTS le plus bas : "+e]]};
+const sal=m=>{const s=N('salary');return s==null?[null,'']:[s>=m,["내 연봉 "+fK(s),"Mon salaire : "+fF(s)]]};
+const EV={
+ sponsor:()=>[Y('sponsor'),''],
+ csol:()=>[Y('csol'),''],
+ msa:()=>Y('sa')===true?[true,["기술평가 보유","Évaluation des compétences obtenue"]]:[null,["직업·여권에 따라 필요할 수 있어요","Peut être requise selon le métier et le passeport"]],
+ salC:()=>sal(R.csit),
+ salA:()=>{const s=N('salary'),a=N('amsr');return s==null||a==null?[null,["시장 임금을 넣으면 비교해요","Saisissez l'AMSR pour comparer"]]:[s>=a,["내 연봉 "+fK(s)+" / AMSR "+fK(a),"Mon salaire : "+fF(s)+" / AMSR : "+fF(a)]]},
+ exp1:()=>{const e=N('exp');return e==null?[null,'']:[e>=1,["내 경력 "+e+"년","Mon expérience : "+e+" an(s)"]]},
+ eng5:()=>engAt(5),
+ hc:()=>[Y('hc'),''],
+ docs:()=>[Y('docs'),''],
+ age:()=>{const a=N('age');return a==null?[null,'']:[a<45,["내 나이 "+a+"세","Mon âge : "+a+" ans"]]},
+ eng6:()=>engAt(6),
+ trt:()=>{const v=N('onVisa');return v==null?[null,'']:[v>=R.trt,["내 근무 "+v+"년","Mon ancienneté : "+v+" an(s)"]]},
+ de1:()=>{const e=N('exp');return e==null?[null,'']:[e>=3,["내 경력 "+e+"년","Mon expérience : "+e+" an(s)"]]},
+ de2:()=>[Y('sa'),'']
+};
+
+const TPL1="The given image illustrates detailed information about [title/topic]. Looking at the image, we can clearly see the highest number and the lowest number. Overall, this image provides very useful information about [title/topic].";
+const TPL2="In today's society, [topic] is a widely discussed issue. Some people believe that [opinion A], while others argue that [opinion B]. In my opinion, [my view].\nFirstly, [reason 1]. For example, [example 1].\nSecondly, [reason 2]. As a result, [result].\nIn conclusion, [restate my view]. Therefore, I strongly believe that [final sentence].";
+const MAIL="Subject: Request to sponsor my Skills in Demand (482) visa\n\nHi [Boss's name],\nMy visa expires on [date]. I'd like to stay long term, so could you sponsor me for a 482 visa?\nTo make the timeline work: 1) confirm the business is an approved sponsor (SBS), 2) start the job advertisement (LMT, at least 4 weeks) this week, 3) offer a base salary of at least AUD 79,499 for a 38-hour week, overtime on top.\nI'll cover my own visa fee, medical and English test. Could we talk this week?\nThanks!";
+const WK=[["Day 1: PTE 시험 날짜 예약 (2~3주 뒤)","Jour 1 : réserver la date du PTE (dans 2-3 semaines)"],["Day 2: APEUni 설치 + 무료 모의고사 1회","Jour 2 : installer APEUni + 1 test blanc gratuit"],["Day 3~5: Describe Image 템플릿을 안 보고 25초 말하기","Jours 3-5 : Describe Image, 25 s sans regarder le modèle"],["Day 6~10: Write From Dictation 빈출 문장 50개 암기·타이핑","Jours 6-10 : 50 phrases fréquentes de Write From Dictation (mémoriser + taper)"],["Day 11~14: 시간 맞춰 모의고사 1회 완주 후 시험 응시","Jours 11-14 : 1 test blanc chronométré complet, puis passer le test"]];
+const D1=[
+{t:["먼저 전체 흐름부터","Le déroulé en un coup d'œil"],d:["처음이라면 이 순서만 기억하세요. 아래 카드들은 각 단계를 하나씩 풀어서 설명해요.","Si c'est votre première fois, retenez cet ordre. Les cartes suivantes détaillent chaque étape."],steps:[["1",["회사가 스폰서(SBS) 승인을 받아요.","L'entreprise obtient l'agrément sponsor (SBS)."]],["2",["회사가 구인 광고(LMT)를 4주 동안 올려요.","L'entreprise publie l'annonce (LMT) pendant 4 semaines."]],["3",["회사가 내 자리를 정부에 요청해요(노미네이션).","L'entreprise dépose la nomination de mon poste."]],["4",["나는 영어 시험과 서류를 준비해요.","Je prépare le test d'anglais et les documents."]],["5",["내가 482 비자를 신청하고, 승인을 기다려요.","Je dépose le visa 482 et j'attends la décision."]]]},
+{t:["482 비자란?","Qu'est-ce que le visa 482 ?"],d:["쉽게 말하면 ‘호주 회사가 나를 직원으로 쓰겠다고 정부에 보증해 줘서 받는 일하는 비자’예요. 원칙적으로 나를 스폰서해 준 회사에서 일해야 하고, 최대 4년까지 받을 수 있어요.", "En clair : un visa de travail que vous obtenez parce qu'une entreprise australienne se porte garante de vous auprès du gouvernement. En principe, vous travaillez pour l'entreprise qui vous sponsorise, jusqu'à 4 ans."]},
+{t:["영주권으로 가는 길","Vers la résidence permanente"],d:["482는 임시 비자라서 기간이 끝나면 만료돼요. 영주권(계속 살 수 있는 권리)은 그다음 단계인 186 비자로 신청해요. 482를 받았다고 영주권이 자동으로 나오는 건 아니에요.", "Le 482 est temporaire. La résidence permanente (droit de rester durablement) se demande ensuite avec le visa 186. Avoir un 482 ne garantit pas la résidence permanente."]},
+{t:["내 직업 코드 (ANZSCO)","Code de mon métier (ANZSCO)"],d:["호주는 모든 직업에 번호를 붙여 놔요. 이 번호가 ANZSCO 코드예요. 고용주가 비자 서류에 내 직업 번호를 적는데, 용접공은 322313이에요. 둘 다 호주 정부의 기술직 목록(CSOL)에 있고, 기술평가(내 실력 심사)는 TRA라는 기관이 해요.", "L'Australie attribue un numéro à chaque métier : c'est le code ANZSCO. L'employeur l'inscrit dans le dossier ; pour un soudeur, c'est 322313. Les deux codes figurent sur la liste CSOL (métiers qualifiés) et l'évaluation des compétences est faite par un organisme appelé TRA."],stats:[[["322313","322313"],["용접공 Welder (First Class)","Soudeur de première classe (Welder First Class)"]],[["322312","322312"],["압력용접공 Pressure Welder","Soudeur haute pression (Pressure Welder)"]]]},
+{t:["내 직업이 목록에 있나요?","Mon métier est-il sur la liste ?"],d:["비자는 정부가 정한 ‘인력이 필요한 직업 목록’(CSOL)에 있는 직업만 받을 수 있어요. 용접공(322313)과 압력용접공(322312)은 이 목록에 있어요. 목록은 바뀔 수 있으니 접수하기 전에 공식 목록에서 다시 확인하세요.", "Seuls les métiers de la liste officielle des métiers recherchés (CSOL) ouvrent droit au visa. Soudeur (322313) et soudeur haute pression (322312) y figurent. La liste change : revérifiez-la avant de déposer."],k:'csol'},
+{t:["SBS란? (승인된 스폰서)","Qu'est-ce que le SBS ? (sponsor agréé)"],d:["SBS는 ‘외국인 직원을 스폰서해도 된다고 정부가 허락한 회사’라는 뜻이에요. 스폰서 자격증 같은 거예요. 회사가 아직 없다면 회사(고용주)가 먼저 신청해서 승인받아야 해요. 내가 대신 할 수 없어요.", "SBS : entreprise que le gouvernement a autorisée à sponsoriser des travailleurs étrangers, comme un « agrément ». Si elle ne l'a pas encore, c'est à l'employeur de le demander d'abord ; vous ne pouvez pas le faire à sa place."]},
+{t:["스폰서 고용주","Employeur sponsor"],d:["모든 일의 출발점이에요. SBS 승인을 받은 회사가 ‘이 직원을 이 자리에 쓰겠다’고 정부에 공식 요청(노미네이션)을 해 줘야 해요. 이 요청이 없으면 내 비자 신청은 시작할 수 없어요.", "C'est le point de départ de tout. Une entreprise agréée SBS doit déposer officiellement une demande (« nomination ») pour votre poste. Sans elle, vous ne pouvez pas déposer votre visa."],k:'sponsor'},
+{t:["LMT란? (구인 광고)","Qu'est-ce que le LMT ? (annonce)"],d:["LMT는 ‘호주 사람부터 먼저 구해 봤는데 못 구했다’는 걸 보여 주는 절차예요. 회사가 구인 광고를 올리고, 최소 4주(28일) 동안 내려가지 않게 해야 해요. 광고가 4주 지나야 다음 단계로 갈 수 있어서 가장 먼저 시작해야 해요. 예외가 있을 수 있으니 확인하세요.", "LMT : preuve que l'entreprise a d'abord cherché à recruter en Australie. Elle publie une annonce qui doit rester en ligne au moins 4 semaines (28 jours). Il faut donc la lancer en premier. Des exceptions existent : à vérifier."]},
+{t:["AMSR란? (시장 임금)","Qu'est-ce que l'AMSR ? (salaire du marché)"],d:["같은 지역에서 같은 일을 하는 호주 직원이 보통 받는 연봉이에요. 외국인이라고 이보다 적게 줄 수 없다는 규칙이에요. 그래서 내 연봉은 이 금액 이상이어야 해요. 금액은 고용주나 이민법무사(MARA)에게 물어보세요.", "Salaire annuel que reçoit habituellement un employé australien pour le même poste dans la même région. Un étranger ne peut pas être payé moins. Votre salaire doit donc être au moins égal à ce montant ; demandez-le à l'employeur ou à un agent MARA."]},
+{t:["연봉 기준","Seuil de salaire"],d:["조건이 두 가지예요. ① 기본급이 AUD 79,499 이상 ② 시장 임금(AMSR)보다 적지 않을 것. 기본급은 일반 시급 기준 연봉이고, 초과근무 수당은 계산에 넣지 않아요. 기준 금액은 해마다 바뀌니 접수 전에 확인하세요.", "Deux conditions : ① salaire de base d'au moins 79 499 AUD ② pas inférieur à l'AMSR. Le salaire de base exclut les heures supplémentaires. Le seuil change chaque année : vérifiez avant de déposer."],k:'salC'},
+{t:["경력 1년 이상","Au moins 1 an d'expérience"],d:["최근 5년 안에 이 직업(용접)으로 풀타임 1년 이상 일한 기록이 필요해요. 풀타임은 주 38시간으로 계산해요. 주 60시간 일했어도 38시간까지만 인정돼요. 회사 증명서와 급여명세서가 증거가 돼요.", "Il faut au moins 1 an à temps plein dans ce métier (soudure) sur les 5 dernières années, compté sur 38 h par semaine : même à 60 h, seules 38 h comptent. Attestation de l'employeur et fiches de paie servent de preuves."],k:'exp1'},
+{t:["영어 점수","Niveau d'anglais"],d:["호주는 기본 영어 실력을 증명하라고 해요. PTE 시험은 4개 영역(말하기·쓰기·읽기·듣기) 각각 36점 이상, IELTS는 각 영역 5.0 이상이에요. 한 영역이라도 모자라면 안 돼요. 공부 방법은 Step 2에 있어요.", "L'Australie demande une preuve d'anglais de base : au PTE, 36 minimum dans chacune des 4 compétences (oral, écriture, lecture, écoute) ; à l'IELTS, 5,0 minimum chacune. Une seule compétence insuffisante suffit à échouer. La méthode est à l'étape 2."],k:'eng5'},
+{t:["서류 준비","Documents"],d:["크게 세 종류예요. 건강검진, 범죄경력증명서(‘범죄 기록 없음’ 증명), 그리고 벨기에 서류의 영어 번역본이에요. 번역은 반드시 호주의 NAATI 공인 번역사에게 맡기세요. 자세한 목록은 Step 3에 있어요.", "Trois grandes catégories : visite médicale, casier judiciaire (preuve de l'absence de condamnation) et traduction anglaise des documents belges. La traduction doit être faite par un traducteur australien certifié NAATI. La liste détaillée est à l'étape 3."],k:'docs'},
+{t:["벨기에 서류 체크리스트","Check-list des documents belges"],d:["하나씩 챙기세요. 정확한 필수 서류는 접수할 때 Home Affairs 안내로 최종 확인하세요.","Rassemblez-les un par un. Vérifiez la liste exacte dans les instructions du Home Affairs au moment du dépôt."],pre:'b',check:[
+["유효한 벨기에 여권 (사진 페이지 사본)","Passeport belge valide (copie de la page photo)"],
+["벨기에 범죄경력증명서 (Extrait de casier judiciaire) — 벨기에에서 12개월 이상 살았다면 필요해요. 벨기에 법무부(FPS Justice) 중앙 범죄기록소에 신청해요.","Extrait de casier judiciaire belge — requis si vous avez vécu 12 mois ou plus en Belgique. À demander au Casier judiciaire central du SPF Justice."],
+["호주 경찰 신원조회(AFP National Police Check) — 호주에서 12개월 이상 살았다면 필요해요.","Police check australien (AFP National Police Check) — requis si vous avez vécu 12 mois ou plus en Australie."],
+["용접 자격증·졸업장 (원본 + 영문 번역)","Diplômes et certificats de soudage (original + traduction anglaise)"],
+["벨기에 고용주의 경력 증명서·급여명세서","Attestations d'emploi et fiches de paie des employeurs belges"],
+["가족과 함께 신청한다면 결혼증명서·자녀 출생증명서","Si la famille vous accompagne : acte de mariage et actes de naissance des enfants"],
+["영어가 아닌 서류는 모두 NAATI 영문 번역본 + 원본","Tout document non anglais : traduction NAATI + original"]
+]},
+{t:["비자 만료 8주 전이라면","Visa expirant dans 8 semaines"],d:["시간이 부족해도 방법이 있어요. 고용주가 지금 구인 광고(최소 4주)를 시작하고, 내 비자가 끝나기 전에 482를 접수하면 브리징 비자(BVA)가 자동으로 적용돼요. BVA는 ‘심사 결과가 나올 때까지 합법적으로 머물며 일할 수 있게 해 주는 임시 비자’예요. 단, 접수는 반드시 지금 비자가 끝나기 전에 해야 해요.", "Même avec peu de temps, il y a une solution : l'employeur lance l'annonce (4 semaines minimum) maintenant et vous déposez le 482 avant l'expiration de votre visa actuel ; le Bridging Visa (BVA) prend alors le relais. Le BVA vous laisse séjourner et travailler légalement pendant l'examen. Le dépôt doit se faire avant l'expiration."]},
+{t:["60일 타임라인 (직접 움직여 보세요)","Calendrier de 60 jours (faites glisser)"],d:["슬라이더를 오늘(Day 0)부터 비자 만료(Day 60)까지 움직이면, 그날 무슨 일이 일어나는지 보여줘요. 당황하지 않도록 미리 확인하세요.","Faites glisser du jour 0 au jour 60 : voyez ce qui se passe à chaque étape pour ne pas paniquer."],scrub:1},
+{t:["보스에게 말하기","Parler à son patron"],d:["스폰서 승인, 구인 광고 즉시 시작, 기본급 AUD 79,499 이상 — 이 3가지만 부탁하세요.","Demandez 3 choses : agrément sponsor, annonce tout de suite, salaire de base d'au moins 79 499 AUD."],c:MAIL},
+{t:["누가 비용을 내나요?","Qui paie quoi ?"],d:["고용주가 내는 돈: 스폰서 신청비, 노미네이션 비용, SAF 세금(기술 인력 교육 기금). 내가 내는 돈: 비자 신청비(약 AUD 3,115부터), 영어 시험, 건강검진, 번역, 건강보험. 금액은 바뀔 수 있어요.", "L'employeur paie : agrément sponsor, nomination et taxe SAF (fonds de formation). Vous payez : frais de visa (environ 3 115 AUD et plus), test d'anglais, visite médicale, traductions et assurance santé. Les montants peuvent changer."]},
+{t:["영주권 로드맵","Feuille de route vers la RP"],d:["482로 같은 회사에서 2년 일하면 186 비자(TRT 방식)로 영주권을 신청할 수 있어요. 기술평가를 받고 경력이 3년 이상이면 Direct Entry(바로 신청)라는 다른 길도 있어요. 어느 쪽이 맞는지는 이민법무사와 상의하세요.", "Après 2 ans chez le même employeur avec le 482, vous pouvez demander la résidence permanente avec le visa 186 (volet TRT). Avec une évaluation des compétences et 3 ans d'expérience, il existe aussi la voie Direct Entry. Un agent MARA vous dira laquelle convient."]},
+{t:["자주 나오는 용어","Mini-glossaire"],d:["SBS = 스폰서 승인 회사 · CSOL = 인력이 필요한 직업 목록 · AMSR = 같은 일의 시장 연봉 · LMT = 호주인 우선 구인 광고 · BVA = 심사 중 임시 체류 비자 · MARA = 공인 이민법무사.", "SBS = entreprise agréée sponsor · CSOL = liste des métiers recherchés · AMSR = salaire du marché · LMT = annonce de recrutement préalable · BVA = visa transitoire pendant l'examen · MARA = agent d'immigration agréé."]},
+{t:["자주 묻는 질문","Questions fréquentes"],d:["눌러서 열어 보세요.","Touchez pour ouvrir."],faq:[
+[["브리징 비자는 어떻게 작동하나요?","Comment fonctionne le visa de transition ?"],["현재 비자가 끝나기 전에 482를 접수하면, 만료일부터 Bridging Visa A가 시작돼요. 기존과 같은 근무 권리로 심사 결과를 기다릴 수 있어요. 접수가 늦으면 적용되지 않으니, 지금 비자로 호주 안에서 신청할 수 있는지 이민법무사(MARA)에게 꼭 확인하세요.","Si vous déposez le 482 avant la fin de votre visa, le Bridging Visa A démarre à l'expiration, avec les mêmes droits de travail. Un dépôt tardif ne l'active pas : confirmez auprès d'un agent MARA que votre visa permet la demande depuis l'Australie."]],
+[["사장님께 어떻게 말하나요?","Comment en parler au patron ?"],["짧게, 회사 입장에서 말하세요. ① SBS 승인 확인 ② 구인 광고(LMT) 이번 주 시작 ③ 용접공(322313)·기본급 AUD 79,499 이상. 비자 신청비·검진·영어 시험은 내가 내고, 스폰서·노미네이션·SAF는 회사가 내요.","Restez bref et parlez business : ① confirmer l'agrément SBS ② lancer l'annonce LMT cette semaine ③ soudeur (322313), salaire de base d'au moins 79 499 AUD. Visa, visite et test sont à votre charge ; sponsor, nomination et SAF à celle de l'entreprise."]],
+[["직업 코드와 영어 기준은?","Code métier et anglais ?"],["용접공은 ANZSCO 322313(압력용접공은 322312)이에요. 영어는 PTE 각 영역 36점 또는 IELTS 5.0 이상이고, 경력은 최근 5년 안에 풀타임 1년 이상(주 38시간 기준)이 필요해요.","Soudeur : ANZSCO 322313 (soudeur haute pression : 322312). Anglais : PTE 36 par compétence ou IELTS 5,0 ; expérience : 1 an à temps plein sur les 5 dernières années (base 38 h/semaine)."]]]},
+{t:["꼭 기억하세요","À retenir"],d:["일반 정보이며 이민 법률 자문이 아니에요. 금액과 기준은 해마다 바뀌니 Home Affairs나 이민 대리인(MARA)에게 확인하세요.","Informations générales, pas un conseil juridique. Les montants changent chaque année : vérifiez auprès du Home Affairs ou d'un agent MARA."]},
+{t:["최종 체크리스트","Check-list finale"],d:["하나씩 눌러서 확인하세요. 모두 체크하면 접수 준비 끝이에요.","Cochez chaque point. Quand tout est coché, le dossier est prêt à être déposé."],pre:'v',check:[
+["고용주가 승인된 스폰서(SBS)예요","L'employeur est sponsor agréé (SBS)"],
+["구인 광고(LMT)를 올렸고 최소 4주 게시해요","L'annonce (LMT) est publiée, au moins 4 semaines"],
+["고용주가 내 자리를 노미네이션했어요","L'employeur a déposé la nomination de mon poste"],
+["계약서 기본급이 AUD 79,499 이상이고 시장 임금(AMSR) 이상이에요","Le salaire de base du contrat est d'au moins 79 499 AUD et au moins égal à l'AMSR"],
+["서류의 직업 코드(322313 / 322312)가 실제 하는 일과 맞아요","Le code métier du dossier (322313 / 322312) correspond à mon travail réel"],
+["기술평가(TRA)가 필요한지 확인했고, 필요하면 받았어요","J'ai vérifié si l'évaluation TRA est requise et, si oui, je l'ai obtenue"],
+["최근 5년 안에 풀타임 1년 이상 경력 증빙을 모았어요","J'ai réuni les preuves d'au moins 1 an à temps plein sur les 5 dernières années"],
+["영어 점수(PTE 각 36점 또는 IELTS 5.0)를 받았거나 시험을 예약했어요","Score d'anglais obtenu (PTE 36 ou IELTS 5,0) ou test réservé"],
+["건강검진과 범죄경력증명서를 준비했어요","Visite médicale et extrait de casier judiciaire prêts"],
+["벨기에 서류의 NAATI 영문 번역본이 있어요","Traductions anglaises NAATI de mes documents belges obtenues"],
+["체류 중 건강보험(OVHC)을 준비했어요","Assurance santé (OVHC) prévue pour le séjour"],
+["482를 접수했고 브리징 비자(BVA)를 확인했어요","Visa 482 déposé et Bridging Visa (BVA) confirmé"]
+]}
+];
+const P1=["Part 2-1","Partie 2-1"],P2=["Part 2-2","Partie 2-2"];
+const D2=[
+{tags:P1,t:["PTE 시험 한눈에 보기","Le PTE en un coup d'œil"],d:["컴퓨터로 한 번에 보고, 사람 면접관은 없어요. 점수는 10~90점이고 목표는 모든 영역 각 36점 이상이에요.","Test sur ordinateur, sans examinateur humain. Score de 10 à 90 : l'objectif est 36 minimum dans chaque compétence."],stats:[[["약 2시간","Environ 2 h"],["한 번에 응시","Une seule session"]],[["10~90점","10 à 90 pts"],["목표: 각 36점+","Objectif : 36+ chacun"]],[["순서","Ordre"],["Speaking·Writing 54~67분 → Reading 29~30분 → Listening 30~43분","Oral·Écriture 54-67 min → Lecture 29-30 min → Écoute 30-43 min"]]],k:'eng5'},
+{tags:P1,t:["원리 ① 침묵 금지 (3초 규칙)","Principe ① Jamais de silence (règle des 3 s)"],d:["말하기에서 3초 이상 멈추면 마이크가 자동으로 꺼져요. 틀려도 멈추지 말고 계속 말하세요.","À l'oral, le micro se coupe après 3 secondes de silence. Même en vous trompant, continuez à parler."]},
+{tags:P1,t:["원리 ② 유창성과 발음이 먼저","Principe ② Fluidité et prononciation d'abord"],d:["어려운 단어나 완벽한 문법이 없어도, 일정한 속도로 또박또박 끊김 없이 말하면 AI가 높게 채점해요.","Sans mots difficiles ni grammaire parfaite, parler à vitesse régulière, distinctement et sans coupure donne un bon score IA."]},
+{tags:P1,t:["원리 ③ 점수 공유 (Cross-scoring)","Principe ③ Scores partagés (cross-scoring)"],d:["말하기 일부 문제가 읽기·듣기 점수에도 반영돼요. 그래서 말하기 연습이 전체 점수를 같이 올려요.","Certaines tâches orales comptent aussi pour la lecture et l'écoute : s'entraîner à l'oral fait monter tout le score."]},
+{tags:P2,t:["1. Speaking 말하기","1. Speaking (oral)"],d:["가장 중요해요. 다른 영역 점수까지 끌어올려요.","La compétence la plus importante : elle tire aussi les autres scores."],rows:[
+ [["① Read Aloud (지문 읽기)","① Read Aloud (lecture à voix haute)"],["모르는 단어도 비슷하게 발음하며 멈추지 말고 읽어요.","Mot inconnu ? Prononcez-le approximativement et continuez sans vous arrêter."]],
+ [["② Repeat Sentence (문장 따라 말하기)","② Repeat Sentence (répéter la phrase)"],["다 못 외워도 기억나는 핵심 단어 50% 이상을 유창하게 말해요.","Même sans tout retenir, dites couramment au moins 50 % des mots clés retenus."]],
+ [["③ Describe Image (그림 묘사)","③ Describe Image (décrire une image)"],["분석하지 말고 만능 틀에 제목과 숫자만 끼워 말해요.","N'analysez pas : insérez titre et chiffres dans un modèle appris."]],
+ [["④ Retell Lecture / Answer Short Question","④ Retell Lecture / Answer Short Question"],["들린 단어 3~4개를 만능 틀에 끼워 말해요.","Insérez 3-4 mots entendus dans un modèle."]]],tpl:TPL1,tplT:["초간단 실전 템플릿 보기 (Describe Image)","Voir le modèle express (Describe Image)"]},
+{tags:P2,t:["2. Writing 쓰기","2. Writing (écriture)"],d:["만능 틀과 받아쓰기로 해결해요.","Un modèle de base et la dictée font l'essentiel."],rows:[
+ [["① Summarize Written Text (한 문장 요약)","① Summarize Written Text (résumé en une phrase)"],["중요한 두 문장을 가져와 , and 또는 , which로 이어 한 문장(5~75단어)으로 써요.","Prenez 2 phrases clés et reliez-les par « , and » ou « , which » : une phrase de 5 à 75 mots."]],
+ [["② Write Essay (에세이)","② Write Essay (dissertation)"],["20분, 200~300단어. 외운 틀의 빈칸에 문제 키워드만 채워요.","20 min, 200-300 mots. Remplissez les blancs du modèle avec les mots clés du sujet."]]],tpl:TPL2,tplT:["초간단 실전 템플릿 보기 (Essay)","Voir le modèle express (Essay)"]},
+{tags:P2,t:["3. Reading 읽기","3. Reading (lecture)"],d:["시간 배분과 기초 어휘가 핵심이에요.","Gestion du temps et vocabulaire de base."],rows:[
+ [["① Fill in the Blanks (빈칸 채우기)","① Fill in the Blanks (texte à trous)"],["문법을 다 따지지 말고 앞뒤 단어와의 자연스러운 짝(collocation)으로 빠르게 골라요.","N'analysez pas toute la grammaire : choisissez vite d'après les associations naturelles (collocations)."]],
+ [["② Multiple Choice / Re-order Paragraphs","② Multiple Choice / Re-order Paragraphs"],["객관식은 30초 안에 고르고 넘어가서 빈칸 문제에 시간을 써요.","Répondez aux QCM en 30 s max et gardez le temps pour les textes à trous."]]]},
+{tags:P2,t:["4. Listening 듣기","4. Listening (écoute)"],d:["마지막 결정타는 받아쓰기예요.","Le coup de grâce : la dictée."],rows:[
+ [["① Write From Dictation (받아쓰기)","① Write From Dictation (dictée)"],["APEUni 빈출 문장 100선을 외우고, 철자가 헷갈리면 아는 대로 최대한 적어요.","Apprenez les 100 phrases fréquentes d'APEUni ; en cas de doute sur l'orthographe, écrivez le plus possible."]],
+ [["② Summarize Spoken Text / Fill in the Blanks","② Summarize Spoken Text / Fill in the Blanks"],["들리는 핵심 명사 4~5개를 메모해 요약 틀에 끼워 넣어요.","Notez 4-5 noms clés entendus et insérez-les dans le modèle de résumé."]]]},
+{t:["템플릿은 뼈대로만","Le modèle n'est qu'un squelette"],d:["Pearson은 통째로 외운 답안의 점수를 낮출 수 있다고 해요. 틀의 [ ]에 직접 내용을 채우고, 문장도 조금씩 바꿔 연습하세요.","Pearson peut pénaliser les réponses entièrement mémorisées. Remplissez vous-même les [ ] et variez un peu les phrases à l'entraînement."]},
+{t:["준비물","À préparer"],d:["유효한 벨기에 여권, Pearson 계정·예약 확인증, 연습 앱 APEUni(비공식 AI 채점)예요.","Passeport belge valide, compte Pearson + confirmation de réservation, appli APEUni (notation IA non officielle)."]},
+{t:["APEUni 사이트 (연습)","APEUni (entraînement)"],d:["PTE 연습용 사이트·앱이에요. AI 채점으로 말하기·쓰기를 미리 점수 확인하고, 빈출 문제와 모의고사를 풀 수 있어요. 공식 사이트가 아니라서 점수는 참고용이에요. 가입 후 무료 모의고사 1회부터 해 보세요.","Site et appli d'entraînement au PTE : notation IA de l'oral et de l'écrit, questions fréquentes et tests blancs. Non officiel : les scores sont indicatifs. Après inscription, commencez par le test blanc gratuit."],links:[["https://www.apeuni.com","apeuni.com"]]},
+{t:["Pearson 사이트 (공식 예약)","Pearson (réservation officielle)"],d:["PTE를 주관하는 공식 사이트예요. 1) 계정 만들기 (이름은 여권과 똑같이) → 2) 시험장·날짜 선택 → 3) 요금 결제 → 4) 예약 확인 메일 저장 순서예요. 시험 당일에는 예약 확인증과 여권을 가져가세요.","Site officiel de l'organisateur du PTE. 1) Créez un compte (nom identique au passeport) → 2) choisissez centre et date → 3) payez → 4) conservez l'e-mail de confirmation. Le jour J : confirmation + passeport."],links:[["https://www.pearsonpte.com","pearsonpte.com"]]},
+{t:["시험 예약","Réserver le test"],d:["멜버른 시티(CBD) 시험장을 추천해요. 결과는 응시 후 2~5일 안에 나와요.","Centre de Melbourne CBD recommandé. Résultats 2 à 5 jours après le test."],link:"https://www.pearsonpte.com"},
+{t:["14일 체크리스트","Check-list de 14 jours"],d:["매일 20분. 항목을 누르면 진행 바가 올라가요.","20 minutes par jour. Cochez : la barre avance."],list:1}
+];
+const DECKS={1:{h:["Step 1 · 비자에 대한 이해","Étape 1 · Comprendre le visa"],s:["비자 구조, 신청 조건, 긴급 일정, 필요 서류를 정리했습니다.","Structure du visa, conditions, calendrier d'urgence et documents requis."],c:D1},2:{h:["Step 2 · 영어를 공부하자","Étape 2 · Préparer l'anglais"],s:["1 시험 소개·필요 점수 → 2 과목별 스킬 → 3 준비·예약.","1 Test et score requis → 2 Compétences et astuces → 3 Préparation et réservation."],c:D2}};
+const M3=[
+{h:["① 벨기에에서 구할 서류","① À obtenir en Belgique"],ic:'file',items:[
+["여권: 사진 있는 페이지를 컬러로 스캔해요. 유효기간이 남아 있어야 해요.","Passeport : scannez en couleur la page avec la photo. Il doit rester valide."],
+["용접학교 졸업장과 성적표: 학교에서 받은 원본을 스캔해요. 영어 번역은 뒤에서 따로 해요.","Diplôme et relevé de notes de l'école de soudure : scannez les originaux. La traduction se fait plus tard."],
+["전 직장 경력증명서: 회사 로고가 있는 종이로 써 달라고 하세요. 직책(Soudeur), 일한 기간, 주당 근무시간, 어떤 용접을 했는지, 상사 서명이 꼭 있어야 해요.","Attestation de travail : demandez-la sur papier à en-tête. Elle doit contenir la fonction (Soudeur), la période, les heures par semaine, les types de soudage et la signature du supérieur."],
+["급여명세서와 세금 내역: 일한 기간을 증명하는 서류예요. 가진 것을 모두 모아요.","Fiches de paie et avis d'imposition : ils prouvent votre période de travail. Rassemblez tout ce que vous avez."],
+["범죄경력증명서: 벨기에 법무부(SPF Justice) 사이트에서 eID나 itsme 앱으로 온라인 발급해요. 너무 오래된 것은 안 될 수 있으니 접수 시기를 이민법무사에게 물어보세요.","Casier judiciaire : demandé en ligne au SPF Justice avec l'eID ou itsme. Un document trop ancien peut poser problème : demandez à l'agent quand le commander."]]},
+{h:["② 호주에서 처리할 서류","② À faire en Australie"],ic:'globe',items:[
+["영어 번역본: 프랑스어·네덜란드어·독일어 서류는 전부 영어로 번역해야 해요. 호주 공인 번역사(NAATI)가 도장을 찍은 PDF를 받으세요.","Traductions : tout document en français, néerlandais ou allemand doit être traduit en anglais. Obtenez un PDF tamponné par un traducteur NAATI."],
+["PTE 성적표: 4개 영역 모두 36점 이상이어야 해요. 시험 후 Pearson 계정에서 받아요.","Score PTE : 36 minimum dans les 4 compétences. Disponible dans votre compte Pearson après le test."],
+["호주 연방경찰 신원조회서(AFP): 호주에서 12개월 이상 살았다면 필요해요.","Police check australien (AFP) : nécessaire si vous avez vécu 12 mois ou plus en Australie."],
+["해외 방문자 건강보험(OVHC) 가입 증서: 보험 회사에서 받아요. 필수예요.","Assurance santé OVHC : l'attestation vient de votre assureur. Obligatoire."]]},
+{h:["③ 사장님(AMA Precast)이 줄 서류","③ À fournir par l'employeur (AMA Precast)"],ic:'building',items:[
+["구인 광고(LMT) 증빙: 광고를 28일 올렸다는 기록과 영수증이에요. 사장님께 달라고 하세요.","Preuve de l'annonce (LMT) : justificatif et reçu de 28 jours de publication. À demander à votre patron."],
+["고용계약서: 직책 Welder (First Class) 322313, 주 38시간, 기본급 AUD 79,499 이상이 적혀 있는지 확인하세요.","Contrat de travail : vérifiez le poste Welder (First Class) 322313, 38 h par semaine et un salaire de base d'au moins 79 499 AUD."],
+["노미네이션 번호(TRN): 회사가 내 자리를 신청하면 나오는 번호예요. 사장님이나 이민법무사에게 받아요.","Numéro de nomination (TRN) : donné quand l'entreprise nomine votre poste. À demander à l'employeur ou à l'agent."]]}
+];
+const D3=[
+{t:["서류 마스터 체크리스트","Check-list des documents"],d:["서류를 하나 모을 때마다 칸을 눌러요. 위의 퍼센트가 올라가요. 칸이 다 차면 이민법무사에게 보낼 준비가 끝난 거예요.","Cochez chaque document réuni : le pourcentage monte. Quand tout est coché, vous pouvez tout envoyer à l'agent."],master:1},
+{t:["스캔과 NAATI 번역 쉬운 팁","Scan et traduction NAATI : conseils simples"],d:["서류가 거절되는 이유는 대부분 흐린 스캔과 잘못된 번역이에요. 아래 순서대로 하세요.","La plupart des refus viennent d'un scan flou ou d'une mauvaise traduction. Suivez l'ordre ci-dessous."],rows:[
+ [["1. 스캔 앱 쓰기","1. Utiliser une appli de scan"],["카메라로 그냥 찍지 말고 Adobe Scan 같은 앱을 써요. 컬러로, 서류 네 모서리가 다 보이게, 밝은 곳에서 찍어요.","Ne prenez pas une simple photo : utilisez Adobe Scan ou similaire. En couleur, les quatre coins visibles, dans un endroit bien éclairé."]],
+ [["2. 확대해서 확인","2. Zoomer pour vérifier"],["스캔한 뒤 화면을 확대해 글자·도장·서명이 또렷한지 봐요. 흐리면 다시 찍어요.","Zoomez sur le scan : texte, tampons et signatures doivent être nets. Sinon, recommencez."]],
+ [["3. 한 서류 = 한 PDF","3. Un document = un PDF"],["여러 장짜리 서류는 페이지 순서대로 한 파일로 묶어요. 파일 이름은 ‘Passport.pdf’처럼 무엇인지 알 수 있게 영어로 써요.","Un document de plusieurs pages = un seul PDF, pages dans l'ordre. Nommez-le clairement en anglais, par ex. « Passport.pdf »."]],
+ [["4. 번역은 호주에서","4. Traduction en Australie"],["벨기에에서 한 번역이나 공증은 인정되지 않을 수 있어요. 호주에 있는 NAATI 공인 번역사를 찾아 스캔본을 이메일로 보내요.","Une traduction ou légalisation faite en Belgique peut être refusée. Trouvez un traducteur NAATI en Australie et envoyez-lui vos scans par e-mail."]],
+ [["5. 보내기 전에 물어보기","5. Poser les questions avant"],["번역 비용, 걸리는 기간, 받을 파일 형식(도장 찍힌 PDF)을 먼저 물어봐요. 서류가 여러 개면 한 번에 보내요.","Demandez d'abord le prix, le délai et le format reçu (PDF tamponné). Envoyez tous les documents en une fois."]],
+ [["6. 받은 뒤 확인","6. Vérifier à la réception"],["번역본의 이름·날짜·직책이 원본과 똑같은지 확인해요. 철자가 다르면 바로 고쳐 달라고 하세요. 원본 스캔과 번역본은 한 쌍으로 보관해요.","Vérifiez que nom, dates et fonction correspondent à l'original. Faites corriger toute erreur. Gardez scan et traduction ensemble, par paire."]]]},
+{t:["이민성 어카운트(ImmiAccount) 만들기","Créer son ImmiAccount (Home Affairs)"],d:["ImmiAccount는 호주 이민성(Home Affairs)의 공식 온라인 계정이에요. 무료이고, 비자 접수·진행 상황 확인·결제를 모두 여기서 해요. 이민법무사가 접수해 주더라도 내 계정이 있으면 진행 상황을 직접 볼 수 있어요.","L'ImmiAccount est le compte en ligne officiel du Home Affairs. Gratuit : dépôt du visa, suivi du dossier et paiement s'y font. Même si un agent dépose pour vous, votre propre compte permet de suivre le dossier."],steps:[
+ ["1",["아래 버튼으로 이민성 로그인 페이지에 들어가 ‘Create ImmiAccount’를 눌러요.","Ouvrez la page de connexion ci-dessous et cliquez sur « Create ImmiAccount »."]],
+ ["2",["계정 종류는 ‘Individual(개인)’을 선택해요. Organisation은 회사용이라 내가 만들 필요 없어요.","Choisissez le type « Individual ». « Organisation » est réservé aux entreprises."]],
+ ["3",["이름·생년월일은 여권과 똑같이, 이메일은 계속 쓸 주소로 입력해요.","Nom et date de naissance identiques au passeport ; e-mail que vous gardez durablement."]],
+ ["4",["비밀번호와 보안 질문을 설정하고 제출해요. 로그인 정보는 따로 안전하게 저장하세요.","Définissez mot de passe et questions de sécurité, puis validez. Conservez ces identifiants en lieu sûr."]],
+ ["5",["가입 후 이메일·로그인 확인이 끝나면 완료예요. 이민법무사에게 계정 이메일을 알려 주세요.","Une fois l'e-mail confirmé et la connexion testée, c'est terminé. Communiquez l'adresse à votre agent."]]
+],links:[["https://online.immi.gov.au/lusc/login","ImmiAccount 로그인·가입 / Connexion et création"],["https://immi.homeaffairs.gov.au/help-support/applying-online-or-on-paper/online/create-your-immiaccount","공식 가입 안내 / Guide officiel de création"]]},
+{t:["접수 직후 타임라인 (BVA)","Après le dépôt : chronologie (BVA)"],d:["접수는 반드시 기존 비자가 끝나기 전에 하세요.","Déposez toujours avant l'expiration du visa actuel."],steps:[
+ ["3-1",["이민법무사에게 모든 서류와 PTE 성적표를 전달하면, 노미네이션과 482 비자를 함께 온라인으로 접수해요.","Transmettez tous les documents et le score PTE à l'agent d'immigration : la nomination et le visa 482 sont déposés en ligne ensemble."]],
+ ["3-2",["기존 비자가 끝나기 전에 접수하면 Bridging Visa A(BVA)가 적용돼요. 합법적으로 체류하고 AMA Precast에서 풀타임 근무를 이어갈 수 있어요.","Si le dépôt est fait avant l'expiration du visa actuel, le Bridging Visa A (BVA) prend le relais : séjour légal et travail à temps plein chez AMA Precast maintenus."]],
+ ["3-3",["482 최종 승인 후 2년 근무하면 186 영주권(TRT 스트림) 신청 자격이 생겨요.","Après l'approbation du 482 et 2 ans de travail : éligibilité au visa 186 de résidence permanente (volet TRT)."]]]}
+];
+DECKS[3]={h:["Step 3 · 서류 취합과 비자 접수","Étape 3 · Documents et dépôt du visa"],s:["최종 서류 체크리스트, 번역·스캔 팁, 접수 후 BVA 타임라인.","Check-list finale, conseils de traduction et de scan, chronologie BVA."],c:D3};
+let view=null,idx=0,cur=null;
+const REQ={t:["필요한 점수","Score requis"],d:["482 비자의 영어 기준은 PTE 모든 영역 각 36점 이상이에요. 한 영역이라도 모자라면 안 돼요. 영주권(186) 쪽은 더 높은 점수(보통 PTE 50 / IELTS 6.0)를 요구할 수 있으니 접수 전에 확인하세요.","Pour le 482 : 36 minimum dans chaque compétence du PTE, aucune ne peut manquer. Pour le visa 186, un score plus élevé (souvent PTE 50 / IELTS 6,0) peut être exigé : vérifiez avant de déposer."],stats:[[["각 36점+","36+ chacun"],["PTE 4개 영역 모두","Les 4 compétences PTE"]],[["IELTS 5.0","IELTS 5,0"],["대신 낼 수 있어요","Alternative possible"]],[["면제","Dispense"],["면제국 여권이면 시험 불필요","Aucun test pour un passeport dispensé"]]],k:'eng5'};
+const SUBJ=[
+{h:["Speaking 말하기","Speaking (oral)"],d:["가장 중요해요. 다른 영역 점수까지 끌어올려요.","La plus importante : elle tire aussi les autres scores."],tasks:[
+{t:["Read Aloud (지문 읽기)","Read Aloud (lecture à voix haute)"],d:["화면의 글을 소리 내어 읽어요.","Lisez le texte affiché à voix haute."],rows:[[["멈추지 않기","Ne pas s'arrêter"],["모르는 단어도 비슷하게 발음하고 계속 가요.","Mot inconnu : prononcez-le approximativement et continuez."]],[["쉼표·마침표에서만 쉬기","Pauses aux virgules et points"],["일정한 속도로 리듬 있게 읽어요.","Lisez à vitesse régulière, avec rythme."]]]},
+{t:["Repeat Sentence (문장 따라 말하기)","Repeat Sentence (répéter la phrase)"],d:["들은 문장을 그대로 따라 말해요.","Répétez la phrase entendue."],rows:[[["핵심 단어 우선","Mots clés d'abord"],["다 못 외워도 기억나는 단어 50% 이상을 유창하게 말해요.","Même sans tout retenir, dites couramment au moins 50 % des mots."]],[["순서 지키기","Garder l'ordre"],["들은 순서대로, 끝까지 멈추지 말고 말해요.","Dans l'ordre entendu, sans s'arrêter."]]]},
+{t:["Describe Image (그림 묘사)","Describe Image (décrire une image)"],d:["그래프·표·사진을 보고 약 25초 동안 말해요.","Décrivez un graphique, tableau ou image pendant environ 25 s."],rows:[[["제목과 숫자 두 개","Titre et deux chiffres"],["가장 큰 값과 가장 작은 값만 찾아요.","Repérez seulement la valeur la plus haute et la plus basse."]],[["만능 틀 사용","Utiliser un modèle"],["분석하지 말고 틀에 끼워 말해요.","N'analysez pas : insérez dans le modèle."]]],tpl:TPL1,tplT:["초간단 실전 템플릿 보기 (Describe Image)","Voir le modèle express (Describe Image)"]},
+{t:["Retell Lecture (강의 요약 말하기)","Retell Lecture (résumer la conférence)"],d:["짧은 강의를 듣고 내용을 다시 말해요.","Écoutez un court exposé puis redites-le."],rows:[[["키워드 3~4개 메모","Noter 3-4 mots clés"],["들리는 명사를 적어 틀에 끼워요.","Notez les noms entendus et insérez-les dans un modèle."]],[["끊기면 이어 말하기","Enchaîner sans pause"],["3초 규칙을 기억하고 계속 말해요.","Règle des 3 s : continuez à parler."]]]},
+{t:["Answer Short Question (짧은 질문 답하기)","Answer Short Question (question courte)"],d:["짧은 질문에 한두 단어로 답해요.","Répondez en un ou deux mots."],rows:[[["바로 한 단어","Un mot, tout de suite"],["길게 설명하지 말고 즉시 답해요.","Pas d'explication : répondez aussitôt."]],[["모르면 아는 단어로","Si inconnu, un mot connu"],["침묵보다 틀린 답이 나아요.","Mieux vaut une erreur que le silence."]]]}]},
+{h:["Writing 쓰기","Writing (écriture)"],d:["만능 틀과 받아쓰기로 해결해요.","Un modèle de base et la dictée font l'essentiel."],tasks:[
+{t:["Summarize Written Text (한 문장 요약)","Summarize Written Text (résumé en une phrase)"],d:["지문을 읽고 한 문장(5~75단어)으로 요약해요.","Résumez le texte en une seule phrase (5 à 75 mots)."],rows:[[["중요한 두 문장","Deux phrases clés"],["핵심 문장 두 개를 골라요.","Choisissez les deux phrases essentielles."]],[["연결어로 한 문장","Un seul lien"],[", and 또는 , which로 이어요. 마침표는 끝에 한 번만 써요.","Reliez par « , and » ou « , which ». Un seul point, à la fin."]]]},
+{t:["Write Essay (에세이)","Write Essay (dissertation)"],d:["20분 동안 200~300단어로 써요.","20 min, 200 à 300 mots."],rows:[[["외운 틀의 빈칸","Blancs du modèle"],["문제 키워드만 채워 넣어요.","Remplissez seulement avec les mots clés du sujet."]],[["마지막 2분 점검","2 dernières minutes"],["단어 수와 철자를 확인해요.","Vérifiez le nombre de mots et l'orthographe."]]],tpl:TPL2,tplT:["초간단 실전 템플릿 보기 (Essay)","Voir le modèle express (Essay)"]}]},
+{h:["Reading 읽기","Reading (lecture)"],d:["시간 배분과 기초 어휘가 핵심이에요.","Gestion du temps et vocabulaire de base."],tasks:[
+{t:["Fill in the Blanks (빈칸 채우기)","Fill in the Blanks (texte à trous)"],d:["글의 빈칸에 알맞은 단어를 골라요.","Choisissez le mot qui convient à chaque blanc."],rows:[[["짝(collocation)","Collocations"],["문법을 다 따지지 말고 앞뒤 단어와 자연스러운 짝으로 골라요.","Ne faites pas toute la grammaire : choisissez selon les associations naturelles."]],[["쉬운 빈칸부터","Les faciles d'abord"],["확실한 것부터 채우고 어려운 건 나중에 해요.","Remplissez d'abord les sûrs."]]]},
+{t:["Multiple Choice (객관식)","Multiple Choice (QCM)"],d:["글을 읽고 질문에 답을 골라요.","Lisez puis répondez à la question."],rows:[[["30초 안에 결정","Décider en 30 s"],["못 정하면 넘어가고 빈칸 문제에 시간을 써요.","Si indécis, passez et gardez le temps pour les trous."]],[["소거법","Élimination"],["틀린 선택지를 먼저 지워요.","Éliminez d'abord les mauvaises options."]]]},
+{t:["Re-order Paragraphs (문단 순서 맞추기)","Re-order Paragraphs (ordre des paragraphes)"],d:["섞인 문단을 올바른 순서로 놓아요.","Remettez les paragraphes dans l'ordre."],rows:[[["첫 문단 찾기","Trouver le premier"],["대명사 없이 주제를 소개하는 문단이 처음이에요.","Le premier présente le sujet sans pronom de renvoi."]],[["연결어 따라가기","Suivre les liens"],["this, it, however 같은 단어가 앞 문단을 가리켜요.","Des mots comme this, it, however renvoient au paragraphe précédent."]]]}]},
+{h:["Listening 듣기","Listening (écoute)"],d:["마지막 결정타는 받아쓰기예요.","Le coup de grâce : la dictée."],tasks:[
+{t:["Write From Dictation (받아쓰기)","Write From Dictation (dictée)"],d:["들은 문장을 그대로 타이핑해요.","Tapez la phrase entendue."],rows:[[["빈출 문장 암기","Phrases fréquentes"],["APEUni 빈출 문장 100선을 외워요.","Apprenez les 100 phrases fréquentes d'APEUni."]],[["아는 대로 전부","Tout ce que vous avez"],["철자가 헷갈려도 들은 단어를 최대한 적어요.","Même hésitant sur l'orthographe, écrivez le plus possible."]]]},
+{t:["Summarize Spoken Text (듣고 요약)","Summarize Spoken Text (résumé oral)"],d:["강의를 듣고 50~70단어로 요약해요.","Résumez l'exposé en 50 à 70 mots."],rows:[[["핵심 명사 4~5개","4-5 noms clés"],["듣는 동안 메모해요.","Notez-les pendant l'écoute."]],[["요약 틀","Modèle de résumé"],["메모한 단어를 틀에 끼워 써요.","Insérez vos notes dans le modèle."]]]},
+{t:["Fill in the Blanks (듣고 빈칸 채우기)","Fill in the Blanks (écoute à trous)"],d:["들으면서 빈칸에 단어를 타이핑해요.","Tapez les mots manquants en écoutant."],rows:[[["들으면서 바로","Taper en écoutant"],["나중에 쓰려 하지 말고 들리는 즉시 입력해요.","Ne remettez pas à plus tard : tapez aussitôt."]],[["철자 확인","Vérifier l'orthographe"],["철자가 틀리면 점수를 못 받아요.","Une faute d'orthographe annule le point."]]]},
+{t:["Multiple Choice (듣고 객관식)","Multiple Choice (QCM à l'écoute)"],d:["듣고 알맞은 답을 골라요.","Écoutez puis choisissez."],rows:[[["선택지 먼저 읽기","Lire les options d'abord"],["듣기 전에 선택지를 훑어 키워드를 잡아요.","Parcourez les options avant l'écoute."]],[["소거법","Élimination"],["확실히 틀린 것부터 지워요.","Éliminez d'abord les mauvaises."]]]}]}
+];
+const SUBT=[[["1 시험 소개·필요 점수","1 Le test et le score"]],[["2 과목별 스킬","2 Compétences et astuces"]],[["3 준비·예약","3 Préparation et réservation"]]];
+let sub=0,subj=0,lastView=null;
+
+const app=document.getElementById('app');
+const IC={sliders:'<line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><line x1="14" x2="14" y1="2" y2="6"/><line x1="8" x2="8" y1="10" y2="14"/><line x1="16" x2="16" y1="18" y2="22"/>',user:'<path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>',globe:'<circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/>',left:'<path d="m12 19-7-7 7-7"/><path d="M19 12H5"/>',right:'<path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>',copy:'<rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/>',check:'<path d="M20 6 9 17l-5-5"/>',x:'<path d="M18 6 6 18"/><path d="m6 6 12 12"/>',minus:'<path d="M5 12h14"/>',ext:'<path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>',down:'<path d="m6 9 6 6 6-6"/>',file:'<path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/>',building:'<rect width="16" height="20" x="4" y="2" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/>'};
+const ic=(n,z=16)=>`<svg class="ic" width="${z}" height="${z}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${IC[n]}</svg>`;
+const mono=h=>h.replace(/(<[^>]+>)|(AUD\s[\d,]+|\d[\d\s,]*\d\sAUD|\b(?:482|186|322313|322312)\b)/g,(m,t,n)=>t?t:`<span class="mn">${n}</span>`);
+const chip=k=>{const r=EV[k]?EV[k]():[null,''];const o=r[0],c=o===true?['c-ok','check',["충족","Validé"]]:o===false?['c-no','x',["부족","Manque"]]:['c-un','minus',["‘내 정보’에서 입력","À saisir dans « Mes infos »"]];return `<span class="chip ${c[0]}">${ic(c[1],14)}${T(c[2])}${r[1]?'<span class="fr">·</span>'+T(r[1]):''}</span>`};
+function chrome(){
+  const bk=document.getElementById('back');bk.className=view?'on':'';bk.innerHTML=ic('left',16)+T(["메뉴","Menu"]);
+  document.getElementById('logo').style.display=view?'none':'flex';
+  document.getElementById('gear').innerHTML=ic('sliders',18);
+  document.getElementById('bInfo').innerHTML=ic('user')+T(["내 정보","Mes infos"]);
+  document.getElementById('bLang').innerHTML=ic('globe')+(lang==='ko'?'한국어':lang==='fr'?'Français':'한국어 + FR');
+  document.getElementById('ovh').innerHTML=ic('user',18)+T(["내 정보","Mes informations"]);
+  document.querySelectorAll('#seg button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===lang?'true':'false'));
+}
+const FM=["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+function dLeft(){const m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(me.vexp||'');if(!m)return null;const t=new Date(),a=new Date(t.getFullYear(),t.getMonth(),t.getDate()),b=new Date(+m[1],+m[2]-1,+m[3]);return Math.round((b-a)/864e5)}
+function ddHTML(){
+  const vn=(VISAS.find(o=>o[0]===me.visa)||VISAS[0])[1],n=dLeft(),m=/^(\d{4})-(\d{2})-(\d{2})$/.exec(me.vexp||''),ttl=(lang==='fr'?vn[1]:vn[0]);
+  if(n===null||!m)return `<div class="dd" title="${ttl}"><span class="dn">D-?</span></div>`;
+  const big=n>0?'D-'+n:n===0?'D-Day':'D+'+(-n),cls=n<0?'past':n<=30?'soon':'';
+  return `<div class="dd ${cls}" title="${ttl}"><span class="dn">${big}</span><span class="ds">${m[1]}.${m[2]}.${m[3]}</span></div>`}
+const sp=t=>{const o=[];t.replace(/[^.!?。]+[.!?。]*\s*/g,m=>{o.push(m.trim())});return o};
+function chunk(d,hx){
+  hx=hx||'';const k=sp(d[0]),f=sp(d[1]),tot=d[0].length+d[1].length;
+  let n=1;if(k.length<=2&&tot<150)n=k.length;else if(k.length>1&&k[0].length<28&&k[0].length+k[1].length<=90)n=2;
+  const lead=[k.slice(0,n).join(' ')||d[0],f.slice(0,n).join(' ')||d[1]],rest=[k.slice(n).join(' '),f.slice(n).join(' ')];
+  const crit=/반드시|꼭 |toujours/i.test(lead[0]+lead[1]),cl=crit?' crit':'',has=rest[0]||rest[1];
+  return `<p class="lead${cl}">${T(lead)}</p>`+(has||hx?`<details class="more"><summary>${T(["자세히 보기","Voir les détails"])}${ic('down',14)}</summary>${has?`<p>${T(rest)}</p>`:''}${hx}</details>`:'')}
+const MT=[["비자","Visa"],["영어","Anglais"],["서류 제출","Dépôt des documents"]];
+function render(){
+  chrome();
+  app.className=view===3?'wide':'';
+  if(!view){app.innerHTML=mono(`<div class="hero"><svg class="pr" viewBox="0 0 60 120" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="104" width="44" height="8"/><rect x="13" y="96" width="34" height="8"/><rect x="18" y="88" width="24" height="8"/><path d="M24 88V40M36 88V40M28 88V40M32 88V40"/><rect x="21" y="34" width="18" height="6"/><rect x="23" y="30" width="14" height="4"/><ellipse cx="30" cy="22" rx="7" ry="8"/><path d="M30 14V4M26 8h8"/></svg>${ddHTML()}<div class="loc">LIÈGE · 50.6326° N 5.5797° E</div><h1>${T(["호주 스폰서 비자 가이드 (482)","Guide du visa sponsorisé Australie (482)"])}</h1><p>${T(["단계를 선택해 순서대로 확인하세요.","Choisissez une étape et suivez-la dans l'ordre."])}</p></div>${[1,2,3].map(n=>`<button class="mc" type="button" data-go="${n}"><span class="n">0${n}</span><span class="b"><span class="t">${T(MT[n-1])}</span></span>${ic('right',18)}</button>`).join('')}`);return}
+  if(view!==lastView){lastView=view;sub=0;subj=0}
+  let D=DECKS[view].c,top='';
+  if(view===2){
+    const C=DECKS[2].c;
+    if(sub===0)D=[REQ,...C.slice(0,4).map(c=>({...c,tags:null}))];
+    else if(sub===1)D=SUBJ[subj].tasks;
+    else D=C.slice(8);
+    top=`<div class="sub">${SUBT.map((z,j)=>`<button type="button" data-sub="${j}" aria-pressed="${j===sub}">${T(z[0])}</button>`).join('')}</div>`;
+    if(sub===1)top+=`<div class="sub s2">${SUBJ.map((z,j)=>`<button type="button" data-subj="${j}" aria-pressed="${j===subj}">${T(z.h)}</button>`).join('')}</div><p class="sd">${T(SUBJ[subj].d)}</p>`;
+  }
+  DECKS[view].cur=D;
+  const one=(c,i)=>{
+    let x='',hx='';
+    if(c.tags)x+=`<div class="tags"><span class="fr">${c.tags[1]}</span><span class="ko">${c.tags[0]}</span></div>`;
+    if(c.stats)x+=`<div class="st">${c.stats.map(z=>`<div><b>${T(z[0])}</b><span>${T(z[1])}</span></div>`).join('')}</div>`;
+    if(c.rows)x+=c.rows.map(r=>`<div class="rw"><b>${T(r[0])}</b>${T(r[1])}</div>`).join('');
+    if(c.tpl)x+=`<details class="acc"><summary><span>${T(c.tplT)}</span>${ic('down',16)}</summary><pre>${c.tpl}</pre><button class="cb" type="button" data-copy="tpl" data-i="${i}">${ic('copy',14)}${T(["복사","Copier"])}</button></details>`;
+    if(c.k)x+=chip(c.k);
+    if(c.c)x+=`<pre>${c.c}</pre><button class="cb" type="button" data-copy data-i="${i}">${ic('copy',14)}${T(["복사","Copier"])}</button>`;
+    if(c.link)x+=`<a class="lnk" href="${c.link}" target="_blank" rel="noopener">pearsonpte.com ${ic('ext',14)}</a>`;
+    if(c.links)x+=`<div style="display:flex;flex-direction:column;gap:8px;align-items:flex-start">${c.links.map(l=>`<a class="lnk" href="${l[0]}" target="_blank" rel="noopener">${l[1].includes(' / ')?T(l[1].split(' / ')):l[1]} ${ic('ext',14)}</a>`).join('')}</div>`;
+    if(c.list){const n=WK.filter((_,j)=>chk['w'+j]).length;x+=`<div class="pb"><i style="width:${n*20}%"></i></div><div class="cnt">${n}/${WK.length} · ${n*20}%</div>`+WK.map((w,j)=>`<label class="ck ${chk['w'+j]?'done':''}"><span class="bx"><input type="checkbox" data-c="w${j}" ${chk['w'+j]?'checked':''}><svg class="tk" viewBox="0 0 24 24"><path pathLength="1" d="M5 12.5l4.5 4.5L19 7"/></svg></span><span>${T(w)}</span></label>`).join('')}
+    if(c.check){const n=c.check.filter((_,j)=>chk[c.pre+j]).length,m=c.check.length;x+=`<div class="pb"><i style="width:${Math.round(n*100/m)}%"></i></div><div class="cnt">${n}/${m} · ${Math.round(n*100/m)}%</div>`+c.check.map((w,j)=>`<label class="ck ${chk[c.pre+j]?'done':''}"><span class="bx"><input type="checkbox" data-c="${c.pre+j}" ${chk[c.pre+j]?'checked':''}><svg class="tk" viewBox="0 0 24 24"><path pathLength="1" d="M5 12.5l4.5 4.5L19 7"/></svg></span><span>${T(w)}</span></label>`).join('')}
+    if(c.master){const ids=M3.flatMap((g,gi)=>g.items.map((_,j)=>'m'+gi+'_'+j)),n=ids.filter(i=>chk[i]).length,pc=Math.round(n*100/ids.length);
+      x+=`<div class="gauge"><div class="gb"><b class="mn">${pc}%</b><span>${T(["서류 준비 완료율","Taux de préparation des documents"])}</span></div><div class="pb"><i style="width:${pc}%"></i></div><div class="cnt">${n}/${ids.length}</div></div><div class="g3">${M3.map((g,gi)=>`<div class="mcat"><div class="mh">${ic(g.ic,16)}<div>${T(g.h)}</div></div>${g.items.map((w,j)=>`<label class="ck ${chk['m'+gi+'_'+j]?'done':''}"><span class="bx"><input type="checkbox" data-c="m${gi}_${j}" ${chk['m'+gi+'_'+j]?'checked':''}><svg class="tk" viewBox="0 0 24 24"><path pathLength="1" d="M5 12.5l4.5 4.5L19 7"/></svg></span><span>${T(w)}</span></label>`).join('')}</div>`).join('')}</div>`}
+    if(c.scrub)x+=scrubHTML();if(c.faq)x+=faqHTML(c);
+    if(c.steps)x+=`<div class="tl3">${c.steps.map(z=>`<div class="ts"><span class="bd mn">${z[0]}</span><div>${T(z[1])}</div></div>`).join('')}</div>`;
+    return `<div class="card"><h2><span class="hn mn">${String(i+1).padStart(2,'0')}</span>${T(c.t)}</h2>${chunk(c.d,hx)}${x}</div>`};
+  app.innerHTML=mono(`<div class="eyebrow">${T(DECKS[view].h)}</div>${top}<div class="list">${D.map(one).join('')}</div>`);
+}
+function renderForm(){
+  document.getElementById('form').innerHTML=fields.map(f=>{const v=me[f[0]]??'';let inp;
+   if(f[2]==='visa')inp=`<select data-k="visa">${VISAS.map(o=>`<option value="${o[0]}" ${me.visa===o[0]?'selected':''}>${OT(o[1])}</option>`).join('')}</select>`;
+   else if(f[2]==='date')inp=`<input type="date" data-k="${f[0]}" value="${v}">`;
+   else if(f[2]==='occ')inp=`<select data-k="occ">${occs.map(o=>`<option value="${o[0]}" ${me.occ===o[0]?'selected':''}>${OT(o[1])}</option>`).join('')}</select>`;
+   else if(f[2]==='yn')inp=`<select data-k="${f[0]}">${yn.map(o=>`<option value="${o[0]}" ${v===o[0]?'selected':''}>${OT(o[1])}</option>`).join('')}</select>`;
+   else inp=`<input type="number" inputmode="decimal" data-k="${f[0]}" value="${v}">`;
+   return `<label class="f">${T(f[1])}${inp}${f[3]?`<small>${T(f[3])}</small>`:''}</label>`}).join('');
+}
+function setLang(l){lang=l;try{localStorage.setItem(LKEY,l)}catch(e){}document.body.dataset.lang=l;renderForm();render()}
+document.addEventListener('click',e=>{
+  const t=e.target;
+  const sg=t.closest('#seg [data-l]');if(sg){setLang(sg.dataset.l);return}
+  if(t.closest('#gear')){document.getElementById('menu').classList.toggle('on');return}
+  if(!t.closest('#menu'))document.getElementById('menu').classList.remove('on');
+  if(t.closest('#bInfo')){document.getElementById('menu').classList.remove('on');renderForm();document.getElementById('ov').classList.add('on');return}
+  if(t.closest('#bLang')){setLang(lang==='both'?'ko':lang==='ko'?'fr':'both');return}
+  if(t.closest('#closeOv')||t.id==='ov'){document.getElementById('ov').classList.remove('on');render();return}
+  if(t.closest('#resetAll')){if(confirm(lang==='fr'?'Effacer toutes les informations ?':'입력한 내 정보를 모두 지울까요?')){me={occ:'322313',csol:'y',visa:'whv1',vexp:'2027-02-02'};try{localStorage.removeItem(KEY)}catch(x){}renderForm()}return}
+  if(t.closest('#back')){view=null;idx=0;render();return}
+  const sb=t.closest('[data-sub]');if(sb){sub=+sb.dataset.sub;render();return}
+  const sj=t.closest('[data-subj]');if(sj){subj=+sj.dataset.subj;render();return}
+  const g=t.closest('[data-go]');if(g){view=+g.dataset.go;idx=0;render();scrollTo(0,0);return}
+  if(t.closest('#pv')&&idx>0){idx--;render();return}
+  if(t.closest('#nx')&&idx<DECKS[view].c.length-1){idx++;render();return}
+  const cb=t.closest('[data-copy]');if(cb){const cd=(DECKS[view].cur||DECKS[view].c)[+cb.dataset.i],txt=cb.dataset.copy==='tpl'?cd.tpl:cd.c,o=cb.innerHTML,done=()=>{cb.classList.add('ok');cb.innerHTML=ic('check',14)+T(["복사됨","Copié"]);setTimeout(()=>{cb.classList.remove('ok');cb.innerHTML=o},1500)};
+    const fb=()=>{const a=document.createElement('textarea');a.value=txt;a.style.cssText='position:fixed;opacity:0';document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(x){}a.remove();done()};
+    navigator.clipboard&&navigator.clipboard.writeText?navigator.clipboard.writeText(txt).then(done,fb):fb()}
+});
+document.addEventListener('input',e=>{const k=e.target.dataset&&e.target.dataset.k;if(!k)return;me[k]=e.target.value;if(k==='occ'){me.csol=me.occ==='other'?'':'y';renderForm()}try{localStorage.setItem(KEY,JSON.stringify(me))}catch(x){}});
+document.addEventListener('change',e=>{const c=e.target.dataset&&e.target.dataset.c;if(!c)return;chk[c]=e.target.checked;lastTick=e.target.checked?c:null;try{localStorage.setItem(CKEY,JSON.stringify(chk))}catch(x){}const y=scrollY;render();scrollTo(0,y)});
+let sx=null;document.addEventListener('touchstart',e=>{sx=e.target.closest('#card')?e.touches[0].clientX:null},{passive:true});
+document.addEventListener('touchend',e=>{if(sx==null||!view)return;const dx=e.changedTouches[0].clientX-sx;sx=null;if(Math.abs(dx)<60)return;const n=DECKS[view].c.length;if(dx<0&&idx<n-1)idx++;else if(dx>0&&idx>0)idx--;else return;render()});
+setLang(lang);
+
+</script>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const G=window.gsap&&!matchMedia('(prefers-reduced-motion:reduce)').matches?window.gsap:null;
+const $$=id=>document.getElementById(id),pad=n=>String(n).padStart(2,'0');
+const toast=m=>{const t=$$('toast');t.textContent=m;t.classList.add('on');clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.remove('on'),2200)};
+/* timeline scrubber */
+const ST=[
+[0,["Day 0 · 오늘","Jour 0 · Aujourd'hui"],["사장님께 요청해요","Demandez au patron"],["스폰서 승인 확인, 구인 광고 이번 주 시작, 직업 코드 지정을 부탁하세요. 광고는 최소 4주 올라가야 해요.","Sponsor confirmé, annonce lancée cette semaine, code métier fixé. L'annonce doit rester 4 semaines minimum."]],
+[8,["Day 8~29 · 준비","Jours 8-29 · Préparation"],["광고가 올라가 있는 동안 준비해요","Préparez-vous pendant l'annonce"],["영어 시험 예약, 경력 증명서·급여명세서, 벨기에 범죄경력증명서를 모아요. 비자는 아직 유효해요.","Réservez le test d'anglais, réunissez attestations, fiches de paie et casier belge. Votre visa est encore valide."]],
+[30,["Day 30 · 노미네이션","Jour 30 · Nomination"],["회사가 노미네이션, 나는 접수","Nomination et dépôt"],["회사가 내 자리를 노미네이션하고, 이민법무사가 내 482를 접수해요. 계속 일할 수 있어요.","L'entreprise nomine votre poste et l'agent dépose votre 482. Vous continuez à travailler."]],
+[45,["Day 45~59 · 대기","Jours 45-59 · Attente"],["평소처럼 일해요","Travaillez normalement"],["심사 중이에요. 이민성에서 추가 요청이 오면 빠르게 답하세요.","Dossier en cours d'examen. Répondez vite à toute demande du Home Affairs."]],
+[60,["Day 60 · 만료","Jour 60 · Expiration"],["브리징 비자가 이어받아요","Le visa de transition prend le relais"],["만료 전에 접수했다면 Bridging Visa A가 시작돼요. 같은 일을 계속하며 결과를 기다려요. 당황하지 마세요. 이 순간을 위한 계획이에요.","Si le dépôt a eu lieu avant, le Bridging Visa A démarre : même travail pendant l'attente. Pas de panique : c'est le but du plan."]]];
+let scD=0;
+const stageOf=d=>ST.reduce((a,s,k)=>d>=s[0]?k:a,0);
+function scrubHTML(){const s=ST[stageOf(scD)];return `<div class="scr"><div class="big" id="scBig">${pad(scD)}</div><input id="sc" type="range" min="0" max="60" value="${scD}" aria-label="Day"><div class="flex justify-between" style="display:flex;justify-content:space-between;font:500 12px 'JetBrains Mono',monospace;color:var(--sub)"><span>0</span><span>30</span><span>60</span></div><div class="stg" id="scStg">${scInner(s)}</div></div>`}
+const scInner=s=>`<div style="font:500 12px 'JetBrains Mono',monospace;color:var(--sub)">${T(s[1])}</div><h3 style="font:700 22px/1.1 'Space Grotesk',sans-serif;letter-spacing:-.03em;margin:6px 0 8px">${T(s[2])}</h3><div>${T(s[3])}</div>`;
+let shownS=-1;
+document.addEventListener('input',e=>{if(e.target.id!=='sc')return;scD=+e.target.value;$$('scBig').textContent=pad(scD);const i=stageOf(scD);if(i===shownS)return;shownS=i;const st=$$('scStg');st.innerHTML=scInner(ST[i]);G&&G.fromTo(st.children,{y:14,opacity:0},{y:0,opacity:1,duration:.5,ease:'power4.out',stagger:.06})});
+/* FAQ */
+const XS='<svg viewBox="0 0 24 24"><path d="M12 3v18M3 12h18"/></svg>';
+function faqHTML(c){return c.faq.map(q=>`<div class="fq" data-open="false"><button aria-expanded="false">${T(q[0])}${XS}</button><div class="a"><div>${T(q[1])}</div></div></div>`).join('')}
+document.addEventListener('click',e=>{const b=e.target.closest('.fq>button');if(!b)return;const f=b.parentNode,a=f.querySelector('.a'),o=f.dataset.open!=='true',sv=b.querySelector('svg');f.dataset.open=o;b.setAttribute('aria-expanded',o);
+  if(G){G.to(sv,{rotation:o?45:0,duration:.45,ease:'power4.out'});G.to(a,{height:o?a.scrollHeight:0,duration:.55,ease:'power4.out',onComplete:()=>{if(o)a.style.height='auto'}})}else{a.style.height=o?'auto':'0';sv.style.transform=o?'rotate(45deg)':''}});
+/* dock */
+document.addEventListener('click',e=>{
+  if(e.target.closest('[data-dk=home]')){$$('back').click();scrollTo(0,0);return}
+  if(e.target.closest('[data-mail]')){const t=MAIL,ok=()=>toast(lang==='fr'?'Message copié':'메시지를 복사했어요'),fb=()=>{const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy');ok()}catch(x){}a.remove()};navigator.clipboard?navigator.clipboard.writeText(t).then(ok,fb):fb()}});
+if(G&&matchMedia('(pointer:fine)').matches)document.querySelectorAll('#dock button').forEach(b=>{const x=G.quickTo(b,'x',{duration:.5,ease:'elastic.out(1,.6)'}),y=G.quickTo(b,'y',{duration:.5,ease:'elastic.out(1,.6)'});b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();x((e.clientX-r.left-r.width/2)*.25);y((e.clientY-r.top-r.height/2)*.25)});b.addEventListener('mouseleave',()=>{x(0);y(0)})});
+/* scroll progress */
+addEventListener('scroll',()=>{$$('prog').style.transform='scaleX('+(scrollY/((document.documentElement.scrollHeight-innerHeight)||1))+')'},{passive:true});
+/* post-render motion */
+let prevPb=null,pk=null,lastTick=null;
+function reveal(){if(!G||!window.IntersectionObserver)return;const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){io.unobserve(e.target);G.to(e.target,{opacity:1,y:0,duration:.75,ease:'power3.out'})}}),{rootMargin:'0px 0px -6% 0px'});document.querySelectorAll('.list>.card').forEach(el=>{G.set(el,{opacity:0,y:16});io.observe(el)})}
+document.addEventListener('change',e=>{if(e.target.dataset&&e.target.dataset.c)prevPb=[...document.querySelectorAll('.pb i')].map(i=>i.style.width)},true);
+document.body.insertAdjacentHTML('beforeend','<div id="secpill" role="status"></div>');
+function updPill(){const pl=$$('secpill');if(!view){pl.classList.remove('on');return}
+  const cs=[...document.querySelectorAll('.list>.card')];let i=0;cs.forEach((c,j)=>{if(c.getBoundingClientRect().top<innerHeight*.45)i=j});
+  const h=DECKS[view].h,t=(lang==='fr'?h[1]:h[0]).split(' · ')[0];
+  pl.innerHTML='<b>'+t+'</b><span class="mn">'+pad(i+1)+'/'+pad(cs.length)+'</span>';pl.classList.add('on')}
+addEventListener('scroll',updPill,{passive:true});
+function post(){
+  if(lastTick){const inp=document.querySelector('[data-c="'+lastTick+'"]');lastTick=null;if(G&&inp&&inp.checked){G.fromTo(inp.nextElementSibling.querySelector('path'),{strokeDashoffset:1},{strokeDashoffset:0,duration:.55,ease:'power3.out'});G.fromTo(inp,{scale:.82},{scale:1,duration:.6,ease:'elastic.out(1,.5)'})}}
+  if(!G)return;
+  const key=view+':'+(view===2?sub+':'+subj:'');
+  if(key!==pk){pk=key;if(!view){G.from('.hero h1',{yPercent:80,duration:1.1,ease:'power4.out'});G.from('.mc',{y:24,opacity:0,duration:.8,ease:'power4.out',stagger:.1,delay:.15})}else reveal()}
+  if(prevPb){const bars=[...document.querySelectorAll('.pb i')];bars.forEach((b,j)=>{const to=b.style.width;if(prevPb[j]!==undefined&&prevPb[j]!==to)G.fromTo(b,{width:prevPb[j]},{width:to,duration:.9,ease:'elastic.out(1,.7)'})});prevPb=null}
+}
+const _r=render;render=function(){_r();post();updPill()};post();updPill();
+</script>
+</body>
+</html>
